@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 40% 60%;
+    grid-gap: 1rem;
+    border: 2px solid black;
+}
+
+.profile {
+    background-color: rgb(225, 225, 225);
+}
+
+.profile .profile-box {
+    background-color: rgb(110, 26, 26);
+    padding: 20px;
+    color: white;
+}
