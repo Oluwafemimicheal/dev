@@ -38,14 +38,15 @@ body {
 
 header {
     position: absolute;
-    top: 0%;
     width: 100%;
+    top: 0%;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
+    box-shadow: 0 0 4px 0 rgb(6, 6, 22);
 }
 
 header .menubar .bar {
@@ -60,13 +61,19 @@ header .menubar .bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: white;
+    color: rgb(22, 12, 46);
 }
 
-.menubar h2 {
-    font-size: 1.5rem;
-    font-family: 'Potta One', sans-serif;
-    color: aqua;
+.menubar .imgbx {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: aqua;
+    text-shadow: 0 0 4px 0 rgb(22, 12, 46);
+    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .menubar ul {
@@ -81,7 +88,7 @@ header .menubar-sm ul li {
 }
 
 .menubar ul li {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 
 .menubar ul div>a {
@@ -90,7 +97,7 @@ header .menubar-sm ul li {
     font-family: 'poppins', sans-serif;
     font-size: 10px;
     border-radius: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
     color: white;
     text-decoration: none;
     transition: all 0.4s ease;
@@ -382,11 +389,9 @@ main {
     align-items: center;
     font-family: 'Potta One', sans-serif;
     height: auto;
-    z-index: 100;
 }
 
 .contact .container {
-    position: relative;
     padding: 70px 0%;
     color: rgb(22, 12, 46);
 }
@@ -435,6 +440,7 @@ main {
 .footer .social-icons {
     font-size: 1.2rem;
     color: rgb(22, 12, 46);
+    z-index: -1000;
 }
 
 .footer .social-icons a i {
@@ -666,6 +672,7 @@ form button:hover {
     }
     header .menubar .bar {
         display: flex;
+        color: white;
     }
     .menubar-sm {
         display: flex;
@@ -682,23 +689,23 @@ form button:hover {
     header .menubar-sm ul {
         list-style: none;
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         flex-direction: column;
         width: 70%;
         height: 100vh;
         padding-top: 30px;
         background-color: rgb(19, 19, 63);
-        z-index: 999;
+        z-index: 9999;
         pointer-events: all;
     }
     header .menubar-sm ul li {
         display: flex;
-        margin: 5px;
+        margin: 8px;
         padding-top: 10px;
         align-items: flex-end;
     }
     .menubar-sm ul li a:hover {
-        padding-left: 70px;
         background-color: aqua;
         color: navy;
     }
@@ -751,8 +758,11 @@ form button:hover {
         background-color: transparent;
     }
     .about {
+        position: relative;
         width: 100%;
-        min-height: auto;
+        height: auto;
+        padding: 10px 0%;
+        z-index: -1000;
     }
     .about .view {
         flex-direction: column;
@@ -763,6 +773,7 @@ form button:hover {
     .about .imgbx {
         width: 70%;
         border: none;
+        z-index: -10;
     }
     .about .view {
         display: flex;
@@ -780,19 +791,18 @@ form button:hover {
     }
     .project .container .view .box {
         width: 300px;
-        height: 420px;
-        background-color: white;
-        color: navy;
+        color: rgb(255, 255, 255);
+        background-color: rgb(26, 25, 25);
+        box-shadow: 0 0 4px 0 white inset;
+        padding: 5px 10px;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 0%;
-        padding-bottom: 10px;
     }
     .project .view .box .imgbx {
         width: 100%;
-        height: 400px;
+        height: 200px;
     }
     header .menubar-sm ul {
         width: 50%;
@@ -800,11 +810,17 @@ form button:hover {
 }
 
 @media(max-width: 500px) {
+    header {
+        position: fixed;
+        background-color: rgb(22, 12, 46);
+        font-size: 0.8rem;
+    }
     .home .imgs {
         display: none;
     }
     .about {
         height: auto;
+        padding: 10px 0%;
     }
     .about .textBx {
         font-size: 0.9rem;
@@ -858,5 +874,14 @@ form button:hover {
         color: rgb(12, 206, 206);
         margin-bottom: 10px;
         font-size: 1.8rem;
+    }
+    header .menubar-sm ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
     }
 }
