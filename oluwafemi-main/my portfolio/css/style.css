@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+.active {
+    border-bottom: 2px solid white;
+}
+
 .preload {
     display: none;
     justify-content: center;
@@ -37,16 +41,18 @@ body {
 }
 
 header {
-    position: absolute;
+    position: fixed;
     width: 100%;
     top: 0%;
     height: 10vh;
     display: flex;
+    background-color: rgb(22, 12, 46);
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 10px;
     box-shadow: 0 0 4px 0 rgb(6, 6, 22);
+    z-index: 9999;
 }
 
 header .menubar .bar {
@@ -462,8 +468,8 @@ main {
 .back-to-top {
     display: none;
     position: fixed;
-    right: 30px;
-    top: 90%;
+    right: 15px;
+    top: 92%;
     cursor: pointer;
     border: none;
     border-radius: 8px;
@@ -487,7 +493,7 @@ main {
 }
 
 .back-to-top a:hover {
-    color: navy;
+    color: rgb(11, 11, 34);
 }
 
 .show.back-to-top {
@@ -807,6 +813,13 @@ form button:hover {
     header .menubar-sm ul {
         width: 50%;
     }
+    .back-to-top {
+        right: 10px;
+        top: 93%;
+    }
+    .back-to-top i {
+        font-size: 1rem;
+    }
 }
 
 @media(max-width: 500px) {
@@ -814,6 +827,7 @@ form button:hover {
         position: fixed;
         background-color: rgb(22, 12, 46);
         font-size: 0.8rem;
+        height: 7.5vh;
     }
     .home .imgs {
         display: none;
@@ -883,5 +897,18 @@ form button:hover {
         flex-direction: column;
         width: 100%;
         height: 100vh;
+    }
+    .back-to-top {
+        right: 10px;
+        top: 93%;
+    }
+    .back-to-top i {
+        font-size: 1rem;
+    }
+    .menubar .imgbx {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 2px;
     }
 }

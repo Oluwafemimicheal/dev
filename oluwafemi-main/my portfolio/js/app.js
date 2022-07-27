@@ -14,6 +14,8 @@ const popup = document.querySelector('.popup-container')
 const remove = document.querySelector('.fa-times')
     // preloading
 const preload = document.querySelector('.preload')
+const activePage = document.querySelectorAll('.menubar ul li a')
+
 
 
 
@@ -66,4 +68,18 @@ checkBtn.addEventListener('click', function() {
 })
 remove.addEventListener('click', function() {
     popup.classList.remove('display')
+})
+
+activePage.forEach((nav) => {
+    nav.addEventListener('click', (e) => {
+        activePage.forEach((link) => {
+            if (link !== nav) {
+                link.classList.remove('active')
+            }
+        })
+        let click = e.currentTarget
+        if (nav === click) {
+            nav.classList.add('active')
+        }
+    })
 })
