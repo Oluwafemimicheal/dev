@@ -10,14 +10,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: brown;
+    background-color: rgb(255, 226, 226);
 }
 
 .container {
     position: relative;
     background-color: white;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 50%;
     margin: auto;
@@ -28,7 +28,7 @@ body {
 }
 
 .box1 {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     width: 50%;
@@ -39,6 +39,19 @@ body {
     text-align: center;
     line-height: 1.5rem;
     font-family: 'Roboto', sans-serif;
+}
+
+span {
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    left: 100%;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(246, 246, 246);
+    z-index: 999;
 }
 
 .box2 {
@@ -59,6 +72,15 @@ body {
 
 h1 {
     font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(76, 76, 76);
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: rgb(76, 76, 76);
 }
 
 .social-media {
@@ -84,17 +106,23 @@ h1 {
 
 .box1 p {
     font-family: 'Roboto', sans-serif;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 500;
     color: rgb(76, 76, 76);
 }
 
 form {
-    line-height: 2.3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    line-height: 40px;
+    padding: 0 30px;
 }
 
 form input {
-    max-width: 100%;
+    width: 100%;
+    margin: 5px 0;
     background-color: brown;
     outline: none;
     padding: 7px;
@@ -106,4 +134,40 @@ form input::placeholder {
     color: rgba(255, 255, 255, 0.878);
 }
 
-form button {}
+form button {
+    border: none;
+    padding: 5px 40px;
+    background-color: brown;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.box2 h1 {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+
+.box2 p {
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.box2 button {
+    border: 2px solid brown;
+    padding: 5px 40px;
+    background-color: transparent;
+    color: brown;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    border-radius: 20px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
