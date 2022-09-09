@@ -21,7 +21,7 @@ body {
 }
 
 .pop img {
-    width: 50%;
+    width: 40%;
     animation: anim 10s infinite;
 }
 
