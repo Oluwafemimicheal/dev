@@ -20,18 +20,27 @@ body {
     width: 100%;
     padding: 5px;
     font-size: 1rem;
-    border: 2px solid green;
+    border: 2px solid rgb(0, 58, 128);
+    border-radius: 7px;
     outline: none;
     color: black;
     margin-bottom: 10px;
     background-color: transparent;
 }
 
+.btn {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 button {
     padding: 5px 10px;
     border: none;
-    background: green;
-    border: 2px solid green;
+    background: rgb(0, 58, 128);
+    border: 2px solid rgb(0, 58, 128);
+    border-radius: 5px;
     color: rgb(255, 255, 255);
     font-size: 1rem;
     font-weight: 700;
@@ -40,12 +49,12 @@ button {
 }
 
 button:hover {
-    background-color: rgb(68, 255, 68);
+    background-color: rgb(9, 40, 98);
 }
 
 #delete {
     background-color: white;
-    color: rgb(221, 36, 36);
+    color: rgb(0, 58, 128);
 }
 
 #delete:active {
