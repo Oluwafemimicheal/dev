@@ -1,10 +1,10 @@
 {
     "manifest_version": 3,
-    "version": "1.2",
-    "name": "Url Tracker",
+    "version": "2.0",
+    "name": "Url Picker",
     "action": {
         "default_popup": "index.html",
-        "default_icon": "icon.png"
+        "default_icon": "./image/url picker.png"
     },
     "permissions": [
         "tabs"
