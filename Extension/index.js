@@ -4,6 +4,11 @@ const btn = document.getElementById('save')
 const ul = document.querySelector('.ul')
 const deleteBtn = document.getElementById('delete')
 const tabBtn = document.getElementById('tab')
+const pop = document.querySelector('.pop')
+
+setInterval(() => {
+    pop.style.display = 'none'
+}, 5000)
 
 const urlFromLocalStorage = JSON.parse(localStorage.getItem('url'))
 if (urlFromLocalStorage) {
