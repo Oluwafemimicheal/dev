@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 400px;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+.container input {
+    width: 100%;
+    padding: 5px;
+    font-size: 1rem;
+    border: 2px solid green;
+    outline: none;
+    color: black;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    background: green;
+    border: 2px solid green;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+button:hover {
+    background-color: rgb(68, 255, 68);
+}
+
+#delete {
+    background-color: white;
+    color: rgb(221, 36, 36);
+}
+
+#delete:active {
+    transform: scale(0.966);
+}
+
+ul {
+    margin-top: 10px;
+    list-style: none;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: underline;
+    color: green;
+}
