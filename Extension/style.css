@@ -39,7 +39,6 @@ body {
 
 .container {
     width: 100%;
-    min-height: 100vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -63,7 +62,7 @@ body {
 .btn {
     width: 65%;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -97,9 +96,13 @@ button:hover {
 
 ul {
     width: 100%;
-    min-height: 80%;
+    min-height: 80vh;
+    overflow: auto;
     margin-top: 10px;
+    padding: 10px;
     list-style: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.45);
 }
 
 li {
@@ -108,5 +111,5 @@ li {
 
 a {
     text-decoration: underline;
-    color: rgb(9, 113, 169);
+    color: rgb(23, 153, 223);
 }
