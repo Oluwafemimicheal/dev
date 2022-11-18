@@ -352,6 +352,7 @@ section {
 }
 
 footer {
+    position: relative;
     background-color: green;
     padding: 30px;
     height: 60vh;
@@ -360,6 +361,7 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
 }
 
 .footer-container li {
@@ -376,4 +378,42 @@ footer {
 .showcase,
 .nav {
     margin-top: 50px;
+}
+
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-top: 2px solid white;
+}
+
+footer .social-media i {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin: 10px;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+footer .social-media i:hover {
+    background-color: rgb(255, 255, 255);
+    color: green;
+}
+
+footer p {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 83%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
