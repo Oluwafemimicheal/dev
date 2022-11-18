@@ -313,6 +313,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 70px;
 }
 
 .client .item-box {
@@ -352,9 +353,27 @@ section {
 
 footer {
     background-color: green;
-    height: 80vh;
+    padding: 30px;
+    height: 60vh;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-container li {
     color: white;
+    margin: 10px;
+}
+
+.footer-container ul {
+    display: block;
+}
+
+.footer-container .weekevent,
+.services,
+.showcase,
+.nav {
+    margin-top: 50px;
 }
