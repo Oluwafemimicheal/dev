@@ -233,7 +233,7 @@ section {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: linear-gradient(#ffffff, #d6ffe5b8);
+    background: linear-gradient(white, white, rgb(109, 255, 109));
     padding: 50px;
     overflow: hidden;
 }
@@ -281,7 +281,7 @@ section {
 
 .value {
     padding: 30px;
-    background: linear-gradient(#d6ffe5b8, #ffffff);
+    background: linear-gradient(rgb(109, 255, 109), white);
     overflow: hidden;
 }
 
