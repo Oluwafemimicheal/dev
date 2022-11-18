@@ -365,8 +365,14 @@ footer {
 }
 
 .footer-container li {
+    padding-bottom: 5px;
     color: white;
     margin: 10px;
+    cursor: pointer;
+}
+
+.footer-container li:hover {
+    text-decoration: underline;
 }
 
 .footer-container ul {
