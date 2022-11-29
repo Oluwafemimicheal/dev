@@ -546,6 +546,7 @@ footer .container .social-media i {
     justify-content: center;
     align-items: center;
     transition: all 0.4s ease;
+    cursor: pointer;
 }
 
 footer .container .social-media i:hover {
