@@ -1,0 +1,520 @@
+*,
+ ::after,
+ ::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    min-height: 100vh;
+    background: url(./images/pexels-yan-krukov-8199759.jpg) no-repeat;
+    background-size: 100%;
+    overflow: hidden;
+}
+
+header .container {
+    width: 85%;
+    margin: auto;
+}
+
+nav {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(13, 15, 44);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0% 2rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.ovarlay {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.734);
+}
+
+.ovarlay .text {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.ovarlay .text h1 {
+    font-size: 4rem;
+    color: rgb(255, 230, 88);
+}
+
+.ovarlay .text h1 span {
+    color: white;
+}
+
+.ovarlay .text .h1 {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.ovarlay .text p {
+    font-size: 1.3rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 15px;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    background: rgb(255, 230, 88);
+}
+
+.about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.about .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.about .container .about .box {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.about .container .about .text {
+    display: flex;
+    justify-content: center;
+    text-align: right;
+}
+
+.about .container .about .imgbx {
+    display: block;
+}
+
+.about .container .about .image img {
+    width: 150%;
+}
+
+.about .container .about {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .container-detail {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: gray;
+    color: white;
+}
+
+.about .container .container-detail .detail {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+.about .text {
+    text-align: right;
+}
+
+.about .text h1 {
+    text-align: right;
+    color: gold;
+}
+
+.about .text h4 {
+    color: navy;
+    font-size: 15px;
+}
+
+.about .text p {
+    margin-top: 10px;
+    text-align: right;
+    line-height: 20px;
+}
+
+.about .image {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.about .image img {
+    width: 250%;
+}
+
+.education {
+    padding: 30px 0%;
+    background-color: rgb(255, 239, 239);
+}
+
+.education .container {
+    padding: 20px 0%;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    align-content: center;
+}
+
+.education .container .edu,
+.exp {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.education .edu h1,
+.exp h1 {
+    background-color: gold;
+    color: white;
+    padding: 10px;
+}
+
+.education .edu div,
+.exp div {
+    background-color: rgb(162, 162, 162);
+    color: white;
+    padding: 10px;
+}
+
+.service {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    margin: 30px 0%;
+}
+
+.service .header {
+    text-align: center;
+}
+
+.service .container-service {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.service .container-service .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.5;
+    margin: 2rem 0%;
+}
+
+.container-service .item .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: gray;
+    overflow: hidden;
+    align-items: center;
+}
+
+.testimony {
+    background: url(images/pexels-yan-krukov-8199759.jpg);
+    background-size: 100%;
+    color: white;
+}
+
+.testimony .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 3rem;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.834);
+}
+
+.testimony .container .text {
+    width: 80%;
+    margin: auto;
+    padding: 1.5rem 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: rem;
+}
+
+.testimony .container .text p {
+    width: 80%;
+    margin: auto;
+    text-align: right;
+}
+
+.testimony .text .img .imgbx {
+    width: 80px;
+    height: 80px;
+    border: 2px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.testimony .text .img .tex {
+    text-align: center;
+}
+
+.testimony .text .img .tex h4 {
+    color: gold;
+}
+
+.testimony .text .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.portfolio {
+    padding: 30px 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.portfolio .header {
+    text-align: center;
+}
+
+.portfolio .header p {
+    width: 70%;
+    margin: auto;
+    padding: 10px 0%;
+}
+
+.portfolio .header .btn {
+    padding: 15px 0%;
+}
+
+.portfolio .header .btn button {
+    background-color: transparent;
+    border: 2px solid gold;
+    font-size: 16px;
+    padding: 5px 8px;
+    color: black;
+    transition: all 0.3s ease-in-out;
+}
+
+.portfolio .header .btn button:hover {
+    background-color: gold;
+    color: white;
+}
+
+.portfolio .header .btn button:active {
+    background-color: transparent;
+    color: black;
+}
+
+.portfolio .container {
+    padding: 20px 0%;
+    width: 60%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    align-content: center;
+    grid-gap: 10px;
+}
+
+.portfolio .container .image {
+    position: relative;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgb(57, 57, 57);
+    transition: all 0.5s ease-in-out;
+}
+
+.portfolio .container .image span {
+    width: 300px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.504);
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.portfolio .container .image span h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 40px;
+    color: white;
+}
+
+.portfolio .container .image:hover span {
+    opacity: 1;
+    animation: show 1s linear;
+}
+
+@keyframes show {
+    0% {
+        transform: translateY(100%);
+    }
+}
+
+.contact {
+    background: url(images/pexels-yan-krukov-8199759.jpg);
+    background-size: 100%;
+    overflow: hidden;
+}
+
+.contact .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.749);
+    color: white;
+    padding: 20px;
+}
+
+form {
+    width: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+form div {
+    display: flex;
+}
+
+form div input:nth-child(2) {
+    margin-left: 10px;
+}
+
+form input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0%;
+    resize: none;
+    border: 1px solid gold;
+    outline: none;
+    background-color: rgba(23, 23, 23, 0.845);
+}
+
+form input:active {
+    background-color: rgb(234, 234, 234);
+    border: 1px solid skyblue;
+}
+
+form input:focus,
+textarea:focus {
+    background-color: rgb(234, 234, 234);
+    border: 1px solid skyblue;
+}
+
+form button {
+    padding: 5px 10px;
+}
+
+footer {
+    padding: 1.5rem 0%;
+}
+
+footer .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .container .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .container .social-media i {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin: 10px;
+    transition: all 0.4s ease;
+}
+
+footer .container .social-media i:hover {
+    background-color: gray;
+    color: black;
+}
