@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto+Condensed:wght@300;400;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&family=Satisfy&display=swap');
 *,
  ::after,
  ::before {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
 }
+
+
+/* Header css */
 
 header {
     position: relative;
@@ -17,6 +22,7 @@ header {
 header .container {
     width: 85%;
     margin: auto;
+    background-color: var();
 }
 
 nav {
@@ -44,7 +50,8 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 15px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .ovarlay {
@@ -62,11 +69,15 @@ nav ul li a {
 .ovarlay .text {
     text-align: center;
     margin-top: -30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .ovarlay .text h1 {
-    font-size: 4rem;
+    font-size: 5rem;
+    letter-spacing: 8px;
     color: rgb(255, 230, 88);
+    line-height: 1;
+    margin-bottom: 10px;
 }
 
 .ovarlay .text h1 span {
@@ -92,12 +103,15 @@ button {
     background: rgb(255, 230, 88);
 }
 
+
+/* About css */
+
 .about {
-    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .about .container {
@@ -108,13 +122,12 @@ button {
     flex-direction: column;
 }
 
-.about .container .about .box {
+.about .container .details .box {
     width: 400px;
     height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
     overflow: hidden;
     padding: 5px;
 }
@@ -192,6 +205,9 @@ button {
     width: 250%;
 }
 
+
+/* Education & Experience */
+
 .education {
     padding: 30px 0%;
     background-color: rgb(255, 239, 239);
@@ -228,6 +244,9 @@ button {
     color: white;
     padding: 10px;
 }
+
+
+/* Service css */
 
 .service {
     display: flex;
@@ -271,6 +290,9 @@ button {
     overflow: hidden;
     align-items: center;
 }
+
+
+/* Testimony css */
 
 .testimony {
     background: url(images/pexels-yan-krukov-8199759.jpg);
@@ -328,6 +350,9 @@ button {
     align-items: center;
     gap: 20px;
 }
+
+
+/* Portfolio css */
 
 .portfolio {
     padding: 30px 0%;
@@ -426,6 +451,9 @@ button {
     }
 }
 
+
+/* Contact css */
+
 .contact {
     background: url(images/pexels-yan-krukov-8199759.jpg);
     background-size: 100%;
@@ -486,6 +514,9 @@ form button {
     padding: 5px 10px;
 }
 
+
+/* Footer css */
+
 footer {
     padding: 1.5rem 0%;
 }
@@ -511,6 +542,9 @@ footer .container .social-media i {
     border-radius: 50%;
     border: 2px solid gray;
     margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all 0.4s ease;
 }
 
