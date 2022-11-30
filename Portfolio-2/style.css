@@ -91,7 +91,7 @@ nav a:active {
 }
 
 .navbar {
-    9bottom: 0%;
+    top: 0%;
     background-color: gold;
     box-shadow: 0 0 4px 0 rgb(199, 199, 199);
     transform: translateZ(0%);
