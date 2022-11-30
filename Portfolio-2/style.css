@@ -52,6 +52,15 @@ nav ul li a {
     color: white;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: yellow;
+}
+
+nav a:active {
+    color: gray;
 }
 
 .ovarlay {
@@ -90,6 +99,10 @@ nav ul li a {
 
 .navbar a {
     color: black;
+}
+
+.navbar a:hover {
+    color: white;
 }
 
 .ovarlay .text h1 span {
@@ -174,7 +187,7 @@ button {
 
 .about-text .div {
     margin-bottom: 10px;
-    border-bottom: 2px solid gold;
+    border-bottom: 2px solid #ffd700;
 }
 
 
