@@ -26,7 +26,7 @@ header .container {
 
 nav {
     position: fixed;
-    top: 20px;
+    top: 15px;
     left: 0%;
     width: 100%;
     padding: 10px 20px;
@@ -94,7 +94,7 @@ nav a:active {
     top: 0%;
     background-color: gold;
     box-shadow: 0 0 4px 0 rgb(199, 199, 199);
-    transform: translateY(-0%);
+    transform: translateY(0%);
 }
 
 .navbar a {
