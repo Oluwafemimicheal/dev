@@ -106,102 +106,62 @@ button {
 /* About css */
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-    font-family: 'Poppins', sans-serif;
+    padding: 2rem 0%;
 }
 
 .about .container {
-    width: 100%;
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.about .ab-self .self {
+    display: flex;
+    padding: 10px 0%;
+}
+
+.about .ab-self .self .detail p {
+    padding-bottom: 20px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.about .ab-self .self .detail p span {
+    font-weight: bold;
+}
+
+.about .ab-self .self img {
+    width: 250px;
+    height: 180px;
+    padding-right: 40px;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about .ab-self .about-me div {
+    display: flex;
     flex-direction: column;
 }
 
-.about .container .details .box {
-    width: 400px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    padding: 5px;
-}
-
-.about .container .about .text {
-    display: flex;
-    justify-content: center;
-    text-align: right;
-}
-
-.about .container .about .imgbx {
-    display: block;
-}
-
-.about .container .about .image img {
-    width: 150%;
-}
-
-.about .container .about {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about .container-detail {
+.about .ab-self .about-me div progress {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: gray;
-    color: white;
+    padding: 10px;
+    background-color: rgba(255, 217, 0, 0.908);
 }
 
-.about .container .container-detail .detail {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
+.about-text {
     line-height: 1.5;
+    text-align: justify;
+    letter-spacing: 2px;
 }
 
-.about .text {
-    text-align: right;
-}
-
-.about .text h1 {
-    text-align: right;
-    color: gold;
-}
-
-.about .text h4 {
-    color: navy;
-    font-size: 15px;
-}
-
-.about .text p {
-    margin-top: 10px;
-    text-align: right;
-    line-height: 20px;
-}
-
-.about .image {
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
-.about .image img {
-    width: 250%;
+.about-text .div {
+    margin-bottom: 10px;
+    border-bottom: 2px solid gold;
 }
 
 
