@@ -91,10 +91,10 @@ nav a:active {
 }
 
 .navbar {
-    top: 0%;
+    9bottom: 0%;
     background-color: gold;
     box-shadow: 0 0 4px 0 rgb(199, 199, 199);
-    transform: translateY(0%);
+    transform: translateZ(0%);
 }
 
 .navbar a {
