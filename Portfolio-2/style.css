@@ -26,7 +26,7 @@ header .container {
 
 nav {
     position: fixed;
-    top: 0%;
+    top: 20px;
     left: 0%;
     width: 100%;
     padding: 10px 20px;
@@ -35,6 +35,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 999;
+    transition: all 0.3s ease;
 }
 
 nav ul {
@@ -67,6 +68,7 @@ nav ul li a {
 
 .ovarlay .text {
     margin-top: 30px;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -77,6 +79,17 @@ nav ul li a {
     line-height: 1;
     font-family: 'Poppins', sans-serif;
     margin-bottom: 10px;
+}
+
+.navbar {
+    top: 0%;
+    background-color: gold;
+    box-shadow: 0 0 4px 0 rgb(199, 199, 199);
+    transform: translateY(-0%);
+}
+
+.navbar a {
+    color: black;
 }
 
 .ovarlay .text h1 span {
