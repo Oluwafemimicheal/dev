@@ -158,9 +158,15 @@ section {
 }
 
 .service-box .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    height: 220px;
     background-color: green;
     color: white;
     border: 2px solid green;
+    overflow: hidden;
     cursor: pointer;
     transition: all .5s ease;
 }
@@ -180,7 +186,7 @@ section {
 }
 
 .service-box .box .imgbx img {
-    width: 100%;
+    width: 150%;
 }
 
 
@@ -354,8 +360,9 @@ section {
 footer {
     position: relative;
     background-color: green;
-    padding: 30px;
-    height: 60vh;
+    padding: 10px 30px;
+    height: auto;
+    color: white;
 }
 
 .footer-container {
@@ -388,10 +395,11 @@ footer {
 
 footer .social-media {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    padding: 20px;
     border-top: 2px solid white;
+    color: white;
 }
 
 footer .social-media i {
@@ -403,23 +411,18 @@ footer .social-media i {
     align-items: center;
     border: 2px solid white;
     border-radius: 50%;
-    margin: 10px;
+    margin: 0% 10px;
     font-size: 20px;
     color: rgb(255, 255, 255);
     cursor: pointer;
     transition: all 0.3s ease;
 }
 
+footer .social-media .item {
+    display: flex;
+}
+
 footer .social-media i:hover {
     background-color: rgb(255, 255, 255);
     color: green;
-}
-
-footer p {
-    text-align: center;
-    color: white;
-    position: absolute;
-    top: 83%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
