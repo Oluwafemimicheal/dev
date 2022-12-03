@@ -8,6 +8,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary-color: gold;
     --textColor: rgb(15, 15, 68);
@@ -71,7 +75,7 @@ nav ul li a {
 }
 
 nav a:hover {
-    color: var(--secondaryColor);
+    color: var(--primary-color);
 }
 
 nav a:active {
@@ -154,10 +158,6 @@ button:active {
 
 
 /* About css */
-
-.about {
-    padding: 2rem 0%;
-}
 
 .about .container {
     width: 85%;
