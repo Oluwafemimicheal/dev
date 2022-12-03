@@ -360,7 +360,6 @@ button:active {
 /* Portfolio css */
 
 .portfolio {
-    padding: 30px 0%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -400,7 +399,7 @@ button:active {
     grid-template-columns: repeat(3, 1fr);
     justify-content: space-around;
     align-content: center;
-    grid-gap: 10px;
+    gap: 1rem;
 }
 
 .portfolio .container .image {
