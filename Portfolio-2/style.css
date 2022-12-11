@@ -182,7 +182,7 @@ button:active {
     font-weight: bold;
 }
 
-.about .ab-self .self img {
+.about .ab-self .self .img {
     width: 250px;
     height: 180px;
     padding-right: 40px;
@@ -205,7 +205,6 @@ button:active {
 .about-text {
     line-height: 1.5;
     text-align: justify;
-    letter-spacing: 2px;
 }
 
 .about-text .div {
