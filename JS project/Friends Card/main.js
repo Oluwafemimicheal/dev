@@ -3,7 +3,8 @@ const cards = document.getElementById('cards')
 const main = document.querySelector('.main')
 const cardContainer = document.querySelector('.card-container')
 const content = document.querySelector('.content')
-const check = document.querySelector('#no')
+const date = document.querySelector('#date')
+
 
 main.addEventListener('click', () => {
     section.classList.remove('active')
@@ -15,6 +16,9 @@ window.addEventListener('load', () => {
     main.classList.add('active2')
 });
 
+//Time
+let time = moment().format('LLL');
+date.innerText = time;
 
 
 // Navigating
