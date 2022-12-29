@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Card</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <header>
+                <div class="image"></div>
+                <h1>Oluwafemi
+                    <span>Developer</span>
+                </h1>
+            </header>
+            <ul>
+                <li><a href="#card" id="cards">Friends Card</a></li>
+                <li><a href="#friend" id="friend">List of Friends</a></li>
+                <li><a href="#add" id="card">Add Friends</a></li>
+
+            </ul>
+            <div class="social-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-telegram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-github"></i>
+            </div>
+        </aside>
+    </div>
+    <section class="main">
+        <div class="to-bar">
+            <h1> My Friends Card</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nobis, eius error ipsa sit officiis omnis dignissimos obcaecat
+            </p>
+        </div>
+        <div class="card-container">
+            <div class="card">
+                <div class="image">
+                    <img src="" alt="Loading">
+                </div>
+                <div class="text">
+                    <h1>Oluwafemi jinadu</h1>
+                    <p>School Friend</p>
+                    <span>09163657267</span>
+                </div>
+            </div>
+    </section>
+
+    <section class="List">
+        <h1>Friends List</h1>
+        <div class="content">
+
+        </div>
+    </section>
+    <section class="add">
+        <h1>Add new friend!</h1>
+        <form id="form">
+            <input type="file" class="image " placeholder="upload image" id='upload' />
+            <input type="text " placeholder="friend name " id="first-name" required/>
+            <input type="text " placeholder="friend other name" id="other-name" />
+            <input type="text " placeholder="friend number " id="number" />
+            <button>Submit</button>
+        </form>
+    </section>
+
+</body>
+
+</html>

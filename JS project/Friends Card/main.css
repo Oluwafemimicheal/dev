@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+aside {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: wheat;
+    display: block;
+    color: gray;
+    padding: 10px;
+}
+
+aside .sidebar {
+    width: 100%;
+    line-height: 2;
+}
+
+.sidebar .image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.sidebar header {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 40px;
+}
+
+header h1 {
+    text-align: center;
+    font-size: 1rem;
+    padding-left: 5px;
+    line-height: 0.9;
+}
+
+h1 span {
+    font-weight: 100;
+    font-size: 1rem;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+li {
+    width: 100%;
+    line-height: 2;
+    margin-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: transparent;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: rgb(243, 243, 243);
+}
+
+.social-icon {
+    margin-top: 24em;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icon i {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 4px;
+    border: 2px solid gray;
+}
+
+.main {
+    width: 80%;
+    margin: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -80%;
+    padding: 10px;
+    transition: 0.3s linear;
+}
+
+.main .to-bar {
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.main .card-container {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.card-container .card {
+    background-color: rgb(216, 216, 216);
+    width: 100%;
+    height: 220px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: 0.1s ease;
+}
+
+.card-container .card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 0 5px 0 rgba(0, 243, 61, 0.789);
+}
+
+.card .image {
+    width: 100%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+
+.card .text {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.List {
+    position: absolute;
+    top: 0;
+    right: -20%;
+    width: 20%;
+    height: 100vh;
+    background-color: rgb(244, 236, 236);
+    box-shadow: 0 0 4px 0 rgb(223, 223, 223);
+    font-size: 15px;
+    transition: 0.3s;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.List.active {
+    right: 0%;
+}
+
+.List h1 {
+    position: sticky;
+    background-color: wheat;
+    text-align: center;
+    font-size: 18px;
+    padding: 3px 5px;
+}
+
+.List .content {
+    padding: 3px 5px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    height: 94vh;
+    overflow: auto;
+}
+
+.content h2 {
+    font-size: 15px;
+    padding-bottom: 2px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.add {
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: -80%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 99;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.3s linear;
+}
+
+.active1 {
+    right: 0%;
+}
+
+.active2 {
+    right: 0%;
+}
+
+form {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.image {
+    width: 250px;
+    height: 150px;
+    border: 2px dotted gray;
+    background-color: transparent;
+    color: black;
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    background: gray;
+    color: white;
+    cursor: pointer;
+}
+
+input::placeholder {
+    color: rgb(221, 221, 221);
+}
+
+input .img {
+    background: none;
+    appearance: none;
+    border: none;
+    outline: none;
+}
