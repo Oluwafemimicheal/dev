@@ -4,11 +4,20 @@ const main = document.querySelector('.main')
 const cardContainer = document.querySelector('.card-container')
 const content = document.querySelector('.content')
 const check = document.querySelector('#no')
-    // Load window
+
+main.addEventListener('click', () => {
+    section.classList.remove('active')
+})
+
+
+// Load window
 window.addEventListener('load', () => {
     main.classList.add('active2')
-        // Navigating
-})
+});
+
+
+
+// Navigating
 const section = document.querySelector('.List')
 const list = document.getElementById('friend')
 
@@ -26,6 +35,7 @@ Add.addEventListener('click', () => {
 cards.addEventListener('click', () => {
     main.classList.add('active2')
     card.classList.remove('active1')
+    section.classList.remove('active')
 })
 
 
@@ -79,21 +89,6 @@ form.addEventListener('submit', (e) => {
     cardContainer.appendChild(detailCard)
     content.appendChild(h2)
 
-    saveLocal(cardContainer, content);
-
-
-    function saveLocal(cards, friend) {
-        //check --- hey do i already have thing in there
-        let card;
-        if (localStorage.getItem(cardContainer, content) === null) {
-            card = [];
-        } else {
-            card = JSON.parse(localStorage.getItem(cards, friend));
-        }
-
-        card.push(cardContainer, friend);
-        localStorage.setItem(cardContainer, content, JSON.stringify(card));
-    }
 
     firstName.value = ''
     upload.value = ''
