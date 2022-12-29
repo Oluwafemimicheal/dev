@@ -10,6 +10,7 @@ main.addEventListener('click', () => {
     section.classList.remove('active')
 })
 
+document.addEventListener('DOMContentLoaded', getFriend)
 
 // Load window
 window.addEventListener('load', () => {
@@ -57,6 +58,8 @@ form.addEventListener('submit', (e) => {
     let other = otherName.value
     let numb = number.value
 
+    saveLocalFriend(cardContainer)
+
     const h2 = document.createElement('h2')
     h2.classList.add('h2')
     h2.innerText = `${first} ${other}`
@@ -68,8 +71,8 @@ form.addEventListener('submit', (e) => {
     imageBox.classList.add('image')
     imageBox.insert = image
 
-    const img = document.createElement('img')
-    img.src = image
+    const img = document.createElement('div')
+    img.innerHTML = '<i class="fa-solid fa-user"></i>'
 
     detailCard.appendChild(imageBox)
     imageBox.appendChild(img)
@@ -98,4 +101,64 @@ form.addEventListener('submit', (e) => {
     upload.value = ''
     otherName.value = ''
     number.value = ''
+
 })
+
+function saveLocalFriend(friend) {
+    let friends;
+    if (localStorage.getItem('friend') === null) {
+        friends = [];
+    } else {
+        friends = JSON.parse(localStorage.getItem('cards'));
+    }
+
+    friends.push(cardContainer);
+    localStorage.setItem('cards', JSON.stringify(cards));
+}
+
+function getFriend() {
+
+    if (localStorage.getItem('friend') === null) {
+        friends = [];
+    } else {
+        friends = JSON.parse(localStorage.getItem('cards'));
+    }
+
+    friends.forEach(function(first) {
+        const h2 = document.createElement('h2')
+        h2.classList.add('h2')
+        h2.innerText = `${first} ${other}`
+
+        const detailCard = document.createElement('div')
+        detailCard.classList.add('card')
+
+        const imageBox = document.createElement('div')
+        imageBox.classList.add('image')
+        imageBox.insert = image
+
+        const img = document.createElement('div')
+        img.innerHTML = '<i class="fa-solid fa-user"></i>'
+
+        detailCard.appendChild(imageBox)
+        imageBox.appendChild(img)
+
+        const text = document.createElement('div')
+        text.classList.add('text')
+
+        const name = document.createElement('h1')
+        name.innerText = first
+        const friend = document.createElement('p')
+        friend.innerText = other
+        const num = document.createElement('span')
+        num.innerText = numb
+
+        text.appendChild(name)
+        text.appendChild(friend)
+        text.appendChild(num)
+        detailCard.appendChild(text)
+
+
+        cardContainer.appendChild(detailCard)
+        content.appendChild(h2)
+    });
+}
