@@ -26,6 +26,7 @@ aside {
 
 aside .sidebar {
     width: 100%;
+    max-width: 600px;
     line-height: 2;
 }
 
@@ -127,18 +128,17 @@ a:hover {
 .main .card-container {
     margin-top: 20px;
     width: 100%;
-    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     justify-items: center;
-    gap: 20px;
+    gap: 10px;
     overflow: hidden;
 }
 
 .card-container .card {
     background-color: rgb(216, 216, 216);
-    width: 90%;
-    height: 230px;
+    width: 100%;
+    height: 200px;
     cursor: pointer;
     overflow: hidden;
     transition: 0.1s ease;
@@ -168,6 +168,22 @@ a:hover {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+}
+
+.card .text h1 {
+    text-transform: capitalize;
+    font-size: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.card .text p {
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.card .text span {
+    font-size: 15px;
 }
 
 .List {
@@ -272,4 +288,25 @@ input .img {
     appearance: none;
     border: none;
     outline: none;
+}
+
+@media (max-width: 600px) {
+    aside {
+        display: none;
+    }
+    .main {
+        width: 100%;
+        margin: auto;
+    }
+    .main .card-container {
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+    }
+    .card-container .card {
+        width: 100%;
+        height: 180px;
+    }
+    .List {
+        right: -50%;
+    }
 }

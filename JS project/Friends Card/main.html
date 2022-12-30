@@ -43,33 +43,29 @@
             </p>
             <span id="date"></span>
         </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="image">
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="text">
-                    <h1>Oluwafemi jinadu</h1>
-                    <p>School Friend</p>
-                    <span>09163657267</span>
-                </div>
-            </div>
+        <div class="card-container"></div>
     </section>
 
     <section class="List">
         <h1>Friends List</h1>
-        <div class="content">
-
-        </div>
+        <div class="content"></div>
     </section>
     <section class="add">
         <h1>Add new friend!</h1>
         <form id="form">
-            <input type="file" class="image " placeholder="upload image" id='upload' />
-            <input type="text " placeholder="friend name " id="first-name" required/>
-            <input type="text " placeholder="friend other name" id="other-name" />
-            <input type="text " placeholder="friend number " id="number" />
-            <button>Submit</button>
+            <input type="file" class="image " placeholder="upload image" name="image" />
+            <input type="text " placeholder="friend name " name="name" required/>
+            <input type="text " placeholder="friend other name" name="other" />
+            <input type="text " placeholder="friend number " name="number" />
+            <select title="select" name="friend">
+                <optgroup>
+                    <option>--Select Friend--</option>
+                    <option value="School">school friend</option>
+                    <option value="Colleges">colleges friend</option>
+                    <option value="Street">street friend</option>
+                </optgroup>
+            </select>
+            <button type="submit">Submit</button>
         </form>
     </section>
 

@@ -5,12 +5,16 @@ const cardContainer = document.querySelector('.card-container')
 const content = document.querySelector('.content')
 const date = document.querySelector('#date')
 
+const nameInput = form['name']
+const otherName = form['other']
+const numberInput = form['number']
+const imageUpload = form['image']
+const friendType = form['friend']
+
 
 main.addEventListener('click', () => {
     section.classList.remove('active')
 })
-
-document.addEventListener('DOMContentLoaded', getFriend)
 
 // Load window
 window.addEventListener('load', () => {
@@ -18,8 +22,8 @@ window.addEventListener('load', () => {
 });
 
 //Time
-let time = moment().format('LLL');
-date.innerText = time;
+// let time = moment().format('LLL');
+// date.innerText = time;
 
 
 // Navigating
@@ -46,119 +50,69 @@ cards.addEventListener('click', () => {
 
 // Getting info
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const upload = document.getElementById('upload')
-    const firstName = document.getElementById('first-name')
-    const otherName = document.getElementById('other-name')
-    const number = document.getElementById('number')
+const friends = JSON.parse(localStorage.getItem('friend')) || []
 
-    let first = firstName.value
-    let image = upload.value
-    let other = otherName.value
-    let numb = number.value
+const addFriends = (name, other, number, image, friendType) => {
+    friends.push({
+        name,
+        other,
+        number,
+        image,
+        friendType
+    })
+    localStorage.setItem('friend', JSON.stringify(friends))
+    return { name, other, number, image, friendType }
+}
 
-    saveLocalFriend(cardContainer)
 
-    const h2 = document.createElement('h2')
-    h2.classList.add('h2')
-    h2.innerText = `${first} ${other}`
+const createFriendElement = ({ name, other, number, image, friendType }) => {
 
     const detailCard = document.createElement('div')
-    detailCard.classList.add('card')
-
     const imageBox = document.createElement('div')
-    imageBox.classList.add('image')
-    imageBox.insert = image
+    const img = document.createElement('img')
+    const friendName = document.createElement('h1')
+    const h2 = document.createElement('h2')
+    const text = document.createElement('div')
+    const num = document.createElement('span')
+    const friendT = document.createElement('p')
 
-    const img = document.createElement('div')
-    img.innerHTML = '<i class="fa-solid fa-user"></i>'
+    detailCard.classList.add('card')
+    imageBox.classList.add('image')
+    text.classList.add('text')
+    h2.classList.add('h2')
+
+    h2.innerText = `${name} ${other}`
+    img.src = image
+    friendName.innerText = `${name} ${other}`;
+    friendT.innerText = friendType
+    num.innerText = number
 
     detailCard.appendChild(imageBox)
     imageBox.appendChild(img)
-
-    const text = document.createElement('div')
-    text.classList.add('text')
-
-    const name = document.createElement('h1')
-    name.innerText = first
-    const friend = document.createElement('p')
-    friend.innerText = other
-    const num = document.createElement('span')
-    num.innerText = numb
-
-    text.appendChild(name)
-    text.appendChild(friend)
-    text.appendChild(num)
+    text.append(friendName, friendT, num)
     detailCard.appendChild(text)
-
-
     cardContainer.appendChild(detailCard)
     content.appendChild(h2)
+}
 
+friends.forEach(createFriendElement)
 
-    firstName.value = ''
-    upload.value = ''
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    const newFriend = addFriends(
+        nameInput.value,
+        otherName.value,
+        numberInput.value,
+        imageUpload.value,
+        friendType.value
+    );
+
+    createFriendElement(newFriend)
+
+    nameInput.value = ''
     otherName.value = ''
-    number.value = ''
-
-})
-
-function saveLocalFriend(friend) {
-    let friends;
-    if (localStorage.getItem('friend') === null) {
-        friends = [];
-    } else {
-        friends = JSON.parse(localStorage.getItem('cards'));
-    }
-
-    friends.push(cardContainer);
-    localStorage.setItem('cards', JSON.stringify(cards));
-}
-
-function getFriend() {
-
-    if (localStorage.getItem('friend') === null) {
-        friends = [];
-    } else {
-        friends = JSON.parse(localStorage.getItem('cards'));
-    }
-
-    friends.forEach(function(first) {
-        const h2 = document.createElement('h2')
-        h2.classList.add('h2')
-        h2.innerText = `${first} ${other}`
-
-        const detailCard = document.createElement('div')
-        detailCard.classList.add('card')
-
-        const imageBox = document.createElement('div')
-        imageBox.classList.add('image')
-        imageBox.insert = image
-
-        const img = document.createElement('div')
-        img.innerHTML = '<i class="fa-solid fa-user"></i>'
-
-        detailCard.appendChild(imageBox)
-        imageBox.appendChild(img)
-
-        const text = document.createElement('div')
-        text.classList.add('text')
-
-        const name = document.createElement('h1')
-        name.innerText = first
-        const friend = document.createElement('p')
-        friend.innerText = other
-        const num = document.createElement('span')
-        num.innerText = numb
-
-        text.appendChild(name)
-        text.appendChild(friend)
-        text.appendChild(num)
-        detailCard.appendChild(text)
-
-
-        cardContainer.appendChild(detailCard)
-        content.appendChild(h2)
-    });
-}
+    numberInput.value = ''
+    imageUpload.value = ''
+    friendType.value = ''
+});
