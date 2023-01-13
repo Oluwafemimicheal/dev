@@ -17,7 +17,7 @@ html {
 
 a {
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
     font-size: 18px;
     padding-bottom: 5px;
 }
@@ -61,32 +61,46 @@ button:active {
     color: white;
 }
 
-.header-top {
-    background: url(image/istockphoto-1125926284-612x612.jpg);
-    min-height: 10px;
+.active .logo-box {
+    width: 50px;
+    height: 50px;
+}
+
+.logo-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.header-top.active {
     box-shadow: 0 0 4px 0 rgb(17, 17, 17);
-    color: white;
-    overflow: hidden;
+    background-color: var(--primary-color);
+    animation: nav 0.5s linear;
+}
+
+@keyframes nav {
+    from {
+        transform: translateY(-100%);
+    }
+}
+
+.header-top {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    color: black;
+    z-index: 999;
 }
 
 .header-top .top-overlay {
-    background-color: rgb(0, 128, 0);
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background: transparent;
     z-index: 99;
-}
-
-.header-top .logo {
-    text-align: center;
-    width: 15%;
-    z-index: 999;
-    font-size: 15px;
-}
-
-nav {
-    padding-right: 40px;
 }
 
 nav a {
@@ -97,9 +111,20 @@ nav a:hover {
     color: var(--secondary-color);
 }
 
+.header-top nav a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.header-top.active nav a:hover {
+    color: rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
 .home {
-    min-height: 93vh;
-    background: url('/practice/image/istockphoto-1125926284-612x612.jpg');
+    min-height: 100vh;
+    background: url('/practice/image/WhatsApp\ Image\ 2022-09-26\ at\ 09.51.22.jpeg') no-repeat;
+    background-size: 100%;
 }
 
 .home .overlay {
@@ -107,26 +132,36 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.757);
-    height: 93vh;
+    background-color: rgba(0, 0, 0, 0.854);
+    height: 100vh;
     color: white;
+}
+
+.home .overlay .text .logo-box {
+    width: 300px;
+    height: 200px;
+    margin-bottom: 90px;
 }
 
 .home .overlay .text {
     width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     font-size: 25px;
-    color: black;
+    color: var(--primary-color);
 }
 
 .home .overlay .text p {
     width: 100%;
     margin: auto;
+    color: rgb(255, 255, 255);
 }
 
 .home .overlay .text button {
-    color: black;
-    border: 2px solid var(--primary-color);
+    color: white;
+    border: 2px solid white;
     font-weight: 600;
 }
 
@@ -204,7 +239,7 @@ section {
     grid-template-columns: 40% 60%;
     gap: 2rem;
     align-items: center;
-    margin-top: 18%;
+    margin-top: 10%;
     width: 80%;
     font-size: 25px;
 }
@@ -232,7 +267,7 @@ section {
 
 .about article button {
     color: black;
-    border-color: black;
+    border: 2px solid var(--primary-color);
 }
 
 
@@ -364,7 +399,7 @@ section {
 footer {
     position: relative;
     background-color: green;
-    padding: 10px 30px;
+    padding: 5px 30px;
     height: auto;
     color: white;
 }
@@ -372,7 +407,18 @@ footer {
 .footer-container {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+.footer-container .logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container .logo .logo-box {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 2px;
 }
 
 .footer-container li {
@@ -393,8 +439,9 @@ footer {
 .footer-container .weekevent,
 .services,
 .showcase,
-.nav {
-    margin-top: 50px;
+.nav,
+.logo {
+    margin-top: 20px;
 }
 
 footer .social-media {
