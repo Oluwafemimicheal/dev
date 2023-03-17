@@ -120,11 +120,37 @@ picture {
     opacity: 0;
 }
 
-@media (max-width: 1064px) {}
+
+/* service style  */
+
+.service .cards {
+    display: grid;
+    grid-template-columns: repeat(1fr, 4);
+}
+
+.sevice .cards .card {
+    flex
+}
+
+@media (max-width: 1064px) {
+    .container {
+        width: 88%;
+        margin: auto;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.1rem;
+    }
+    .home {
+        margin-top: 4rem;
+    }
+}
 
 @media (max-width: 700px) {
     .container {
-        width: 90%;
+        width: 95%;
         margin: auto;
     }
     .navbar,
@@ -136,7 +162,7 @@ picture {
         font-size: 2rem;
     }
     .home {
-        margin-top: 4rem;
+        margin-top: 3rem;
         flex-wrap: wrap;
         text-align: center;
     }
