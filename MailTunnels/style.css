@@ -75,6 +75,10 @@ ul li:hover {
     margin: 0 !important;
 }
 
+.mg {
+    margin: 0 !important;
+}
+
 .btn:hover {
     opacity: 0.8;
 }
@@ -83,6 +87,12 @@ ul li:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-col {
+    flex-direction: column !important;
+    align-items: flex-start;
+    padding: 1rem;
 }
 
 
@@ -131,7 +141,24 @@ picture {
     flex-direction: column;
     align-items: flex-start;
     background-color: gray;
+    padding: 2rem 1rem;
     overflow: hidden;
+}
+
+.service .cards .card:nth-child(1) {
+    background-color: rgb(37, 111, 37);
+}
+
+.service .cards .card:nth-child(2) {
+    background-color: rgb(151, 191, 151);
+}
+
+.service .cards .card:nth-child(3) {
+    background-color: rgb(129, 227, 129);
+}
+
+.service .cards .card:nth-child(4) {
+    background-color: rgb(17, 50, 17);
 }
 
 .service .cards .card picture {
@@ -146,6 +173,20 @@ picture {
 
 .service .cards .card picture:hover {
     transform: scale(1.02);
+}
+
+.service .cards .card small {
+    font-size: 1.1rem;
+    padding: 1rem 0;
+}
+
+
+/* Trial style */
+
+.trial {
+    background-color: white;
+    padding-top: 6rem;
+    text-align: center;
 }
 
 @media (max-width: 1064px) {
@@ -182,7 +223,10 @@ picture {
         flex-wrap: wrap;
         text-align: center;
     }
-    picture {
-        opacity: 0;
+    .home picture {
+        display: none
+    }
+    .service .cards {
+        flex-wrap: wrap;
     }
 }
