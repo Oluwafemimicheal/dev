@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    outline: none;
+    border: none;
+    background: transparent;
+    text-decoration: none;
+    color: black;
+}
+
+:root {
+    --primaryColor: rgb(84, 215, 102);
+    --secondaryColor: rgb(8, 69, 22);
+    --textColor: rgb(86, 85, 85);
+    --transition: all 0.3s ease;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(238, 228, 228)
+}
+
+p {
+    margin: 1rem 0 2rem 0;
+    font-size: 1.2rem;
+    color: var(--textColor);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: var(--secondaryColor);
+    line-height: 1.2;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+img {
+    width: 100%;
+}
+
+.img-size {
+    width: 80%;
+}
+
+ul li {
+    margin: 0 1rem;
+}
+
+ul li:hover {
+    border-bottom: 2px solid var(--secondaryColor);
+}
+
+.btn {
+    width: max-content;
+    padding: 0.7rem 1.5rem;
+    margin: 0 0.5rem;
+    border: 2px solid var(--primaryColor);
+    border-radius: 2rem;
+    color: var(--secondaryColor);
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: var(--secondaryColor);
+    color: white;
+    border-color: var(--secondaryColor) !important;
+    margin: 0 !important;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* header style */
+
+.header-container {
+    padding: 1rem 0;
+}
+
+.logo {
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.navbar {
+    margin-right: 1rem;
+    color: var(--secondaryColor) !important;
+}
+
+
+/* home style */
+
+.home {
+    margin-top: 4rem;
+    align-items: flex-start !important;
+    line-height: 1.5;
+}
+
+picture {
+    justify-content: flex-end !important;
+}
+
+.fa-bars {
+    opacity: 0;
+}
+
+@media (max-width: 1064px) {}
+
+@media (max-width: 700px) {
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    .navbar,
+    .button {
+        display: none;
+    }
+    .fa-bars {
+        opacity: 1;
+        font-size: 2rem;
+    }
+    .home {
+        margin-top: 4rem;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    picture {
+        opacity: 0;
+    }
+}
