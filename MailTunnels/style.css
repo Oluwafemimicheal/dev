@@ -171,7 +171,7 @@ picture {
     padding: 1rem;
 }
 
-.service .cards .card picture:hover {
+.service .cards .card:hover picture {
     transform: scale(1.02);
 }
 
