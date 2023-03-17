@@ -123,13 +123,29 @@ picture {
 
 /* service style  */
 
-.service .cards {
-    display: grid;
-    grid-template-columns: repeat(1fr, 4);
+.service {
+    margin-top: 5rem;
 }
 
-.sevice .cards .card {
-    flex
+.service .cards .card {
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: gray;
+    overflow: hidden;
+}
+
+.service .cards .card picture {
+    width: 100%;
+    height: 300px;
+    background: url('image/mailtunnels.png');
+    background-position: center;
+    background-size: cover;
+    transition: var(--transition);
+    padding: 1rem;
+}
+
+.service .cards .card picture:hover {
+    transform: scale(1.02);
 }
 
 @media (max-width: 1064px) {
