@@ -111,6 +111,7 @@ ul li:hover {
 .navbar {
     margin-right: 1rem;
     color: var(--secondaryColor) !important;
+    transition: all 1s ease;
 }
 
 
@@ -225,6 +226,56 @@ picture {
     }
     .home picture {
         display: none
+    }
+    .active {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: var(--secondaryColor);
+        width: 70%;
+        height: 100vh;
+        padding: 1rem;
+        z-index: 999;
+        transform: translateX(0);
+    }
+    .active::before {
+        content: '';
+        width: 50%;
+        height: 100vh;
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.368);
+        top: 0%;
+        left: 100%;
+        pointer-events: none;
+    }
+    .active ul {
+        margin-top: 4rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .active ul li {
+        margin: 10px;
+    }
+    .active a {
+        color: white;
+        font-size: 1.2rem;
+    }
+    .active a:hover {
+        color: var(--primaryColor);
+    }
+    .active .button {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5rem;
+        padding-top: 1rem;
+        border-top: 2px solid white;
+    }
+    .active .button .btn {
+        border: 2px solid var(--primaryColor) !important;
+        margin-top: 1rem !important;
+        font-size: 1.1rem;
+        margin-left: 0 !important;
     }
     .service .cards {
         flex-wrap: wrap;
