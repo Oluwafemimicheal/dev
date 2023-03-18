@@ -110,8 +110,13 @@ ul li:hover {
 
 /* header style */
 
-.header-container {
-    padding: 1rem 0;
+.header .active {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 0 4px gray
 }
 
 .logo {
@@ -129,13 +134,21 @@ ul li:hover {
 /* home style */
 
 .home {
-    margin-top: 4rem;
+    margin-top: 5rem;
     align-items: flex-start !important;
     line-height: 1.5;
 }
 
+.home .active {
+    margin-top: 10rem;
+}
+
 picture {
     justify-content: flex-end !important;
+}
+
+.home-text {
+    width: 100%;
 }
 
 .fa-bars {
