@@ -111,7 +111,6 @@ ul li:hover {
 .navbar {
     margin-right: 1rem;
     color: var(--secondaryColor) !important;
-    transition: all 1s ease;
 }
 
 
@@ -237,7 +236,7 @@ picture {
         height: 100vh;
         padding: 1rem;
         z-index: 999;
-        transform: translateX(0);
+        transition: var(--transition);
     }
     .active::before {
         content: '';
@@ -247,7 +246,7 @@ picture {
         background-color: rgba(0, 0, 0, 0.368);
         top: 0%;
         left: 100%;
-        pointer-events: none;
+        pointer-events: auto;
     }
     .active ul {
         margin-top: 4rem;
