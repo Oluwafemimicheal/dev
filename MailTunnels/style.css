@@ -31,7 +31,7 @@ body {
 }
 
 .m2 {
-    margin: 2rem 0;
+    margin: 2rem 0 !important;
 }
 
 .ml {
@@ -70,6 +70,10 @@ h3 {
     color: var(--secondaryColor);
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 200;
+}
+
+li {
+    margin: 0.8rem 0 !important;
 }
 
 .container {
@@ -272,7 +276,6 @@ ul li:hover {
 .trial-card {
     margin-top: 3rem;
     line-height: 1.3;
-    height: 65vh;
 }
 
 #trial .card {
