@@ -22,7 +22,7 @@ html {
 }
 
 body {
-    background-color: rgb(238, 228, 228)
+    background-color: rgb(250, 250, 250)
 }
 
 .m1 {
@@ -81,6 +81,14 @@ img {
     width: 60%;
 }
 
+.img-9 {
+    width: 90%;
+}
+
+.home-img {
+    width: 130%;
+}
+
 ul li {
     margin: 0 1rem;
 }
@@ -91,10 +99,9 @@ ul li:hover {
 
 .btn {
     width: max-content;
-    padding: 0.5rem 1.0rem;
+    padding: 0.7rem 1.4rem;
     margin: 0 0.5rem;
     border: 2px solid var(--primaryColor);
-    border-radius: 2rem;
     color: var(--secondaryColor);
     font-weight: 600;
 }
@@ -130,6 +137,10 @@ ul li:hover {
     flex-direction: column;
 }
 
+.f-jc {
+    justify-content: center !important;
+}
+
 
 /* header style */
 
@@ -163,17 +174,20 @@ ul li:hover {
 /* home style */
 
 .home {
-    margin: 8rem auto;
-    align-items: flex-start !important;
+    margin: 3rem auto;
+    align-items: center !important;
     line-height: 1.5;
 }
 
-picture {
-    justify-content: flex-end !important;
+.home picture {
+    width: 50%;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center !important;
 }
 
 .home-text {
-    width: 100%;
+    width: 45%;
 }
 
 .fa-bars {
@@ -317,6 +331,50 @@ footer {
     border-radius: 2rem;
     margin-right: 50px;
     justify-content: center !important;
+}
+
+#user-testimony {
+    padding: 4rem 0;
+}
+
+#user-testimony picture {
+    width: 550px;
+    height: 350px;
+    background-color: rgb(237, 237, 237);
+    justify-content: center !important;
+    padding: 0.8rem 0.5rem;
+}
+
+#integration .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+#integration .cards .card {
+    width: 350px;
+    height: 150px;
+    background-color: transparent;
+    justify-content: center !important;
+    padding: 1rem;
+    gap: 1rem;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#integration .card:hover {
+    background-color: rgb(241, 241, 241);
+}
+
+#integration picture {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    background-color: var(--primaryColor);
+}
+
+#integration p {
+    margin: 0 !important;
 }
 
 @media (max-width: 1064px) {
