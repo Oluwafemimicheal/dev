@@ -37,16 +37,30 @@ body {
     margin-left: 0.6rem;
 }
 
+.wc {
+    color: white !important;
+}
+
 p {
     margin: 1rem 0 2rem 0;
     font-size: 1.2rem;
     color: var(--textColor);
 }
 
+::highlight(p) {
+    color: #ad26ad;
+    text-decoration: underline;
+}
+
 h1 {
     font-size: 2.5rem;
     color: var(--secondaryColor);
     line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    color: var(--secondaryColor);
 }
 
 h3 {
@@ -274,6 +288,26 @@ footer {
 
 .fb-text small {
     color: white;
+}
+
+
+/* user-experience */
+
+#user-experience {
+    padding: 4rem 0;
+}
+
+.content-text p {
+    width: 90%;
+    line-height: 1.5;
+}
+
+
+/* keep-consumer */
+
+#keep-consumer {
+    background-color: var(--primaryColor);
+    padding: 4rem 0;
 }
 
 @media (max-width: 1064px) {
