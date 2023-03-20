@@ -310,6 +310,15 @@ footer {
     padding: 4rem 0;
 }
 
+#keep-consumer picture {
+    width: 450px;
+    height: 400px;
+    background-color: var(--secondaryColor);
+    border-radius: 2rem;
+    margin-right: 50px;
+    justify-content: center !important;
+}
+
 @media (max-width: 1064px) {
     .container {
         width: 88%;
