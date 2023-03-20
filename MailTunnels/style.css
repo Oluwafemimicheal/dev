@@ -33,6 +33,10 @@ body {
     margin: 2rem 0;
 }
 
+.ml {
+    margin-left: 0.6rem;
+}
+
 p {
     margin: 1rem 0 2rem 0;
     font-size: 1.2rem;
@@ -43,6 +47,11 @@ h1 {
     font-size: 2.5rem;
     color: var(--secondaryColor);
     line-height: 1.2;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--secondaryColor);
 }
 
 .container {
@@ -122,14 +131,13 @@ ul li:hover {
 }
 
 .header-container {
-    height: 8vh;
+    height: 10vh;
     overflow: hidden;
 }
 
 .logo {
-    width: 70px;
+    width: 100px;
     height: 70px;
-    overflow: hidden;
 }
 
 .navbar {
@@ -141,7 +149,7 @@ ul li:hover {
 /* home style */
 
 .home {
-    margin: 10rem auto;
+    margin: 8rem auto;
     align-items: flex-start !important;
     line-height: 1.5;
 }
@@ -296,10 +304,6 @@ footer {
     .fa-bars {
         opacity: 1;
         font-size: 2rem;
-    }
-    .header-container {
-        height: 5vh;
-        overflow: hidden;
     }
     .home {
         margin-top: 5rem;
