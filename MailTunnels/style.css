@@ -55,7 +55,7 @@ img {
 }
 
 .img-size {
-    width: 80%;
+    width: 60%;
 }
 
 ul li {
@@ -68,7 +68,7 @@ ul li:hover {
 
 .btn {
     width: max-content;
-    padding: 0.7rem 1.5rem;
+    padding: 0.5rem 1.0rem;
     margin: 0 0.5rem;
     border: 2px solid var(--primaryColor);
     border-radius: 2rem;
@@ -110,13 +110,20 @@ ul li:hover {
 
 /* header style */
 
-.header .active {
+.header.scroll {
     position: fixed;
     top: 0%;
     left: 0%;
     width: 100%;
+    padding: 0 !important;
     background-color: white;
-    box-shadow: 0 0 4px gray
+    box-shadow: 0 0 4px gray;
+    z-index: 999;
+}
+
+.header-container {
+    height: 8vh;
+    overflow: hidden;
 }
 
 .logo {
@@ -134,13 +141,9 @@ ul li:hover {
 /* home style */
 
 .home {
-    margin-top: 5rem;
+    margin: 10rem auto;
     align-items: flex-start !important;
     line-height: 1.5;
-}
-
-.home .active {
-    margin-top: 10rem;
 }
 
 picture {
@@ -212,12 +215,12 @@ picture {
     background-color: white;
     padding-top: 6rem;
     text-align: center;
-    height: 110vh;
 }
 
 .trial-card {
     margin-top: 3rem;
     line-height: 1.3;
+    height: 65vh;
 }
 
 #trial .card {
@@ -230,6 +233,39 @@ picture {
     transform: scale(1.02);
     background-color: var(--primaryColor);
     color: white !important;
+}
+
+#trial .trial-text {
+    padding: 1rem 0;
+    width: 80%;
+    margin: auto;
+    color: black;
+}
+
+.trial-btn {
+    margin-top: 0.5rem;
+    background-color: var(--secondaryColor);
+    color: white;
+    border-radius: 2rem;
+    padding: 0.6rem 1rem;
+}
+
+footer {
+    background-color: var(--secondaryColor);
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 2px solid white;
+}
+
+.fb-text {
+    margin: 1rem 0;
+    justify-content: center !important;
+}
+
+.fb-text small {
+    color: white;
 }
 
 @media (max-width: 1064px) {
@@ -261,8 +297,12 @@ picture {
         opacity: 1;
         font-size: 2rem;
     }
+    .header-container {
+        height: 5vh;
+        overflow: hidden;
+    }
     .home {
-        margin-top: 3rem;
+        margin-top: 5rem;
         flex-wrap: wrap;
         text-align: center;
     }
@@ -289,7 +329,7 @@ picture {
         background-color: rgba(0, 0, 0, 0.368);
         top: 0%;
         left: 100%;
-        pointer-events: auto;
+        pointer-events: none;
     }
     .active ul {
         margin-top: 4rem;
@@ -319,7 +359,11 @@ picture {
         font-size: 1.1rem;
         margin-left: 0 !important;
     }
-    .service .cards {
+    .service .cards,
+    .trial-card {
         flex-wrap: wrap;
+    }
+    .trial-card {
+        height: auto;
     }
 }

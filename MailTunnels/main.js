@@ -6,11 +6,6 @@ menu.addEventListener('click', () => {
     navbarToggle.classList.toggle('active')
 })
 
-header.addEventListener('scroll', () => {
-    if (window.scrollY > 100) {
-        header.classList.add('active')
-    } else {
-        header.classList.remove('active')
-    }
+window.addEventListener('scroll', () => {
+    document.querySelector('.header').classList.toggle('scroll', window.scrollY > 100)
 })
-console.log(window.scrollY)
