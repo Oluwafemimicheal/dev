@@ -11,9 +11,9 @@
 }
 
 :root {
-    --primaryColor: rgb(84, 215, 102);
-    --secondaryColor: rgb(8, 69, 22);
-    --textColor: rgb(66, 66, 66);
+    --primaryColor: #eb9481;
+    --secondaryColor: #e6b232;
+    --textColor: #455a64;
     --transition: all 0.3s ease;
 }
 
@@ -72,10 +72,6 @@ h3 {
     font-weight: 200;
 }
 
-li {
-    margin: 0.8rem 0 !important;
-}
-
 .container {
     width: 85%;
     margin: auto;
@@ -98,7 +94,7 @@ img {
 }
 
 .home-img {
-    width: 130%;
+    width: 200%;
 }
 
 ul li {
@@ -230,19 +226,19 @@ ul li:hover {
 }
 
 .service .cards .card:nth-child(1) {
-    background-color: rgb(37, 111, 37);
+    background-color: rgba(240, 231, 59, 0.624);
 }
 
 .service .cards .card:nth-child(2) {
-    background-color: rgb(151, 191, 151);
+    background-color: rgba(172, 186, 14, 0.257);
 }
 
 .service .cards .card:nth-child(3) {
-    background-color: rgb(129, 227, 129);
+    background-color: rgba(255, 234, 0, 0.284);
 }
 
 .service .cards .card:nth-child(4) {
-    background-color: rgb(17, 50, 17);
+    background-color: rgba(187, 176, 25, 0.479);
 }
 
 .service .cards .card picture {
