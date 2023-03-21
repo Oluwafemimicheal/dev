@@ -155,6 +155,10 @@ ul li:hover {
     justify-content: center !important;
 }
 
+.cl-black {
+    color: black !important;
+}
+
 
 /* header style */
 
@@ -226,23 +230,35 @@ ul li:hover {
     align-items: flex-start;
     background-color: gray;
     padding: 2rem 1rem;
-    overflow: hidden;
+    height: 650px;
+}
+
+.service .cards .card:hover h3 {
+    text-decoration: underline;
 }
 
 .service .cards .card:nth-child(1) {
-    background-color: rgba(240, 231, 59, 0.624);
+    background: url(image/pic1.webp) no-repeat;
+    background-size: 100%;
+    background-color: #e6b232;
 }
 
 .service .cards .card:nth-child(2) {
-    background-color: rgba(172, 186, 14, 0.257);
+    background: url(image/pic2.webp) no-repeat;
+    background-size: 100%;
+    background-color: #8f7739;
 }
 
 .service .cards .card:nth-child(3) {
-    background-color: rgba(255, 234, 0, 0.284);
+    background: url(image/pic3.webp) no-repeat;
+    background-size: 100%;
+    background-color: #e6b33282;
 }
 
 .service .cards .card:nth-child(4) {
-    background-color: rgba(187, 176, 25, 0.479);
+    background: url(image/pic4.webp) no-repeat;
+    background-size: 100%;
+    background-color: #fed05da1;
 }
 
 .service .cards .card picture {
@@ -302,6 +318,7 @@ ul li:hover {
 .pd-n {
     padding: 0.8rem 0 !important;
     border-bottom: 1px solid gray;
+    width: 100%;
 }
 
 .trial-btn {
