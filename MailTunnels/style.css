@@ -50,6 +50,10 @@ p {
     font-weight: lighter;
 }
 
+.size {
+    font-size: 0.8rem !important;
+}
+
 h1 {
     font-size: 2.5rem;
     color: var(--textColor);
@@ -282,8 +286,6 @@ ul li:hover {
 
 #trial .card:hover {
     transform: scale(1.02);
-    background-color: var(--primaryColor);
-    color: white !important;
 }
 
 #trial .trial-text {
@@ -291,6 +293,15 @@ ul li:hover {
     width: 80%;
     margin: auto;
     color: black;
+}
+
+.m-0 {
+    margin: 0.3rem 0 !important;
+}
+
+.pd-n {
+    padding: 0.8rem 0 !important;
+    border-bottom: 1px solid gray;
 }
 
 .trial-btn {
