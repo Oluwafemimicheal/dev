@@ -483,6 +483,9 @@ footer {
         opacity: 1;
         font-size: 2rem;
     }
+    #home {
+        overflow: hidden;
+    }
     .home {
         flex-direction: column;
         margin-top: 5rem;
