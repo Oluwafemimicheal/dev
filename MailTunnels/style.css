@@ -52,7 +52,7 @@ p {
 
 h1 {
     font-size: 2.5rem;
-    color: var(--secondaryColor);
+    color: var(--textColor);
     line-height: 1.2;
     font-family: 'Berkshire Swash', cursive;
     font-weight: lighter;
@@ -335,7 +335,7 @@ footer {
 /* keep-consumer */
 
 #keep-consumer {
-    background-color: var(--primaryColor);
+    background-color: rgb(204, 204, 204);
     padding: 4rem 0;
 }
 
