@@ -115,11 +115,11 @@ ul li:hover {
 
 .btn {
     width: max-content;
-    padding: 0.5rem 1.0rem;
+    padding: 0.4rem 0.7rem;
     margin: 0 0.5rem;
-    border: 2px solid black;
+    border: 2px solid var(--textColor);
     border-radius: 0.5rem;
-    color: var(--secondaryColor);
+    color: var(--textColor);
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 200;
 }
@@ -138,7 +138,7 @@ ul li:hover {
 }
 
 .btn:hover {
-    opacity: 0.8;
+    box-shadow: 0 3px 0 0px var(--textColor);
 }
 
 .flex {
