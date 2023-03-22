@@ -252,20 +252,21 @@ ul li:hover {
     background-size: 100%;
 }
 
-.service .card .card-text:nth-child(0) {
-    background-color: #e6b232;
-}
-
-.service .card .card-text:nth-child(1) {
-    background-color: #ffc020;
-}
-
-.service .card .card-text:nth-child(2) {
-    background-color: #e6b332;
-}
-
 .service .card .card-text {
+    background-color: var(--secondaryColor);
     padding: 2rem;
+}
+
+.service .card .cd-1 {
+    background-color: #c2c81f !important;
+}
+
+.service .card .cd-2 {
+    background-color: #d0db00 !important;
+}
+
+.service .card .cd-3 {
+    background-color: #e9ff47 !important;
 }
 
 .service .cards .card picture {
@@ -498,6 +499,7 @@ footer .logo img {
     .bars {
         opacity: 1;
         font-size: 1rem;
+        padding: 0.4rem !important;
     }
     #home {
         overflow: hidden;
