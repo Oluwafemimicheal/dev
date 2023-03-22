@@ -178,15 +178,8 @@ ul li:hover {
     overflow: hidden;
 }
 
-.logo {
-    width: 100px;
-    height: 70px;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 900;
-}
-
-.logo h4 {
-    color: var(--secondaryColor);
+.logo img {
+    width: 70% !important;
 }
 
 .navbar {
@@ -356,6 +349,11 @@ footer {
 .footer-bottom {
     width: 100%;
     border-top: 2px solid white;
+}
+
+footer .logo img {
+    width: 20% !important;
+    margin-bottom: 0.5rem;
 }
 
 .fb-text {
