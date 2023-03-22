@@ -50,6 +50,10 @@ p {
     font-weight: lighter;
 }
 
+.pd-l {
+    padding-left: 1rem;
+}
+
 .size {
     font-size: 0.8rem !important;
 }
@@ -113,7 +117,8 @@ ul li:hover {
     width: max-content;
     padding: 0.5rem 1.0rem;
     margin: 0 0.5rem;
-    border: 2px solid var(--primaryColor);
+    border: 2px solid black;
+    border-radius: 0.5rem;
     color: var(--secondaryColor);
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 200;
@@ -123,6 +128,7 @@ ul li:hover {
     background-color: var(--secondaryColor);
     color: white;
     border-color: var(--secondaryColor) !important;
+    border-radius: 0.5rem;
     margin: 0 !important;
     font-weight: 100;
 }
@@ -207,7 +213,7 @@ ul li:hover {
     width: 45%;
 }
 
-.fa-bars {
+.bars {
     opacity: 0;
 }
 
@@ -222,8 +228,9 @@ ul li:hover {
     flex-direction: column;
     align-items: flex-start;
     background-color: gray;
-    padding: 2rem 1rem;
+    padding-top: 2rem;
     height: 650px;
+    overflow: hidden;
 }
 
 .service .cards .card:hover h3 {
@@ -233,25 +240,21 @@ ul li:hover {
 .service .cards .card:nth-child(1) {
     background: url(image/pic1.webp) no-repeat;
     background-size: 100%;
-    background-color: #e6b232;
 }
 
 .service .cards .card:nth-child(2) {
     background: url(image/pic2.webp) no-repeat;
     background-size: 100%;
-    background-color: #8f7739;
 }
 
 .service .cards .card:nth-child(3) {
     background: url(image/pic3.webp) no-repeat;
     background-size: 100%;
-    background-color: #e6b33282;
 }
 
-.service .cards .card:nth-child(4) {
-    background: url(image/pic4.webp) no-repeat;
-    background-size: 100%;
-    background-color: #fed05da1;
+.service .card .card-text {
+    background-color: #8f7739;
+    padding: 2rem;
 }
 
 .service .cards .card picture {
@@ -282,7 +285,7 @@ ul li:hover {
 
 #trial {
     background-color: rgb(255, 246, 246);
-    padding-top: 6rem;
+    padding-top: 3rem;
     text-align: center;
 }
 
@@ -311,7 +314,7 @@ ul li:hover {
 
 #trial .trial-text {
     padding: 1rem 0;
-    width: 80%;
+    width: 100%;
     margin: auto;
     color: black;
 }
@@ -481,9 +484,9 @@ footer .logo img {
     .button {
         display: none;
     }
-    .fa-bars {
+    .bars {
         opacity: 1;
-        font-size: 2rem;
+        font-size: 1rem;
     }
     #home {
         overflow: hidden;

@@ -1,4 +1,4 @@
-const menu = document.querySelector('.fa-bars')
+const menu = document.querySelector('.bars')
 const navbarToggle = document.querySelector('.navbar')
 const header = document.querySelector('.header')
 
