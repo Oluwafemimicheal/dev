@@ -518,17 +518,6 @@ footer .logo img {
         transition: var(--transition);
         z-index: 1;
     }
-    .active::before {
-        content: '';
-        width: 600px;
-        height: 100vh;
-        position: absolute;
-        background-color: rgba(0, 0, 0, 0.424);
-        top: 0%;
-        left: 0%;
-        pointer-events: none;
-        z-index: -999;
-    }
     .active ul {
         margin-top: 4rem;
         flex-direction: column;
@@ -552,10 +541,12 @@ footer .logo img {
         border-top: 2px solid white;
     }
     .active .button .btn {
-        border: 2px solid var(--primaryColor) !important;
         margin-top: 1rem !important;
         font-size: 1.1rem;
         margin-left: 0 !important;
+    }
+    .active .button .btn-primary {
+        border: 2px solid black !important;
     }
     #service {
         overflow: hidden;
