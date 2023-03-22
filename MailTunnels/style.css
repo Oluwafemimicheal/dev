@@ -81,7 +81,7 @@ h3 {
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: auto;
 }
 
@@ -214,7 +214,7 @@ ul li:hover {
 }
 
 .bars {
-    opacity: 0;
+    display: none;
 }
 
 
@@ -357,29 +357,6 @@ ul li:hover {
     padding: 0.6rem 1rem;
 }
 
-footer {
-    background-color: var(--secondaryColor);
-}
-
-.footer-bottom {
-    width: 100%;
-    border-top: 2px solid white;
-}
-
-footer .logo img {
-    width: 20% !important;
-    margin-bottom: 0.5rem;
-}
-
-.fb-text {
-    margin: 1rem 0;
-    justify-content: center !important;
-}
-
-.fb-text small {
-    color: white;
-}
-
 
 /* user-experience */
 
@@ -406,7 +383,6 @@ footer .logo img {
 #keep-consumer {
     background-color: rgb(255, 239, 239);
     padding: 4rem 0;
-    height: 90vh;
 }
 
 #keep-consumer .kp {
@@ -464,11 +440,34 @@ footer .logo img {
     width: 150px;
     height: 100px;
     overflow: hidden;
-    background-color: var(--primaryColor);
+    background-color: rgb(234, 222, 222);
 }
 
 #integration p {
     margin: 0 !important;
+}
+
+footer {
+    background-color: black;
+}
+
+.footer-bottom {
+    width: 100%;
+    border-top: 2px solid white;
+}
+
+footer .logo img {
+    width: 20% !important;
+    margin-bottom: 0.5rem;
+}
+
+.fb-text {
+    margin: 1rem 0;
+    justify-content: center !important;
+}
+
+.fb-text small {
+    color: white;
 }
 
 @media (max-width: 1064px) {
@@ -497,9 +496,9 @@ footer .logo img {
         display: none;
     }
     .bars {
-        opacity: 1;
+        display: block;
         font-size: 1rem;
-        padding: 0.4rem !important;
+        padding: 0.2rem 0.6rem !important;
     }
     #home {
         overflow: hidden;
@@ -529,7 +528,17 @@ footer .logo img {
         height: 100vh;
         padding: 1rem;
         transition: var(--transition);
-        z-index: 1;
+        z-index: 999;
+    }
+    .active::after {
+        position: absolute;
+        content: '';
+        width: 500px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background-color: #e6b33225;
+        z-index: -99;
     }
     .active ul {
         margin-top: 4rem;
@@ -582,12 +591,12 @@ footer .logo img {
         transition: var(--transition);
         padding: 1rem;
     }
-    .service .cards .card small {
-        color: white;
-    }
     .service .cards,
     .trial-card {
         flex-wrap: wrap;
+    }
+    #trial .trial-text {
+        padding: 0% !important;
     }
     .trial-card {
         height: auto;
@@ -669,5 +678,11 @@ footer .logo img {
     }
     footer {
         overflow: hidden;
+    }
+    footer .logo {
+        justify-content: center !important;
+    }
+    footer .logo img {
+        width: 50% !important;
     }
 }
