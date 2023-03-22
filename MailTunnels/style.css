@@ -389,7 +389,7 @@ footer .logo img {
 /* keep-consumer */
 
 #keep-consumer {
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(255, 239, 239);
     padding: 4rem 0;
     height: 90vh;
 }
@@ -495,6 +495,7 @@ footer .logo img {
     }
     .home-text {
         width: 100%;
+        padding: 2rem 0;
     }
     .header-container {
         height: 7vh;
@@ -508,22 +509,22 @@ footer .logo img {
         top: 0;
         left: 0;
         background-color: var(--secondaryColor);
-        width: 70%;
+        width: 60%;
         height: 100vh;
         padding: 1rem;
-        z-index: 999;
         transition: var(--transition);
-        overflow: hidden;
+        z-index: 1;
     }
     .active::before {
         content: '';
-        width: 50%;
+        width: 600px;
         height: 100vh;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.368);
+        background-color: rgba(0, 0, 0, 0.424);
         top: 0%;
-        left: 100%;
+        left: 0%;
         pointer-events: none;
+        z-index: -999;
     }
     .active ul {
         margin-top: 4rem;
@@ -555,6 +556,9 @@ footer .logo img {
     }
     #service {
         overflow: hidden;
+    }
+    .service .cards .card {
+        margin-bottom: 2rem;
     }
     .service .cards .card .image {
         display: flex;
@@ -590,6 +594,12 @@ footer .logo img {
     }
     .trial-card {
         height: auto;
+    }
+    .trial-card .card {
+        margin-bottom: 2rem;
+    }
+    #trial .rc {
+        margin-top: 0.5rem;
     }
     #user-experience .user-content {
         flex-direction: column !important;
