@@ -12,7 +12,7 @@
 
 :root {
     --primaryColor: #eb9481;
-    --secondaryColor: #e6b232;
+    --secondaryColor: #292723;
     --textColor: #455a64;
     --transition: all 0.3s ease;
 }
@@ -84,13 +84,31 @@ h3 {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s;
+    transition: all 2s;
 }
 
 .show {
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+}
+
+#service .card:nth-child(2),
+#trial .card:nth-child(2) {
+    transition-delay: 200ms;
+}
+
+#service .card:nth-child(3),
+#trial .card:nth-child(3) {
+    transition-delay: 400ms;
+}
+
+#trial .card:nth-child(4) {
+    transition-delay: 600ms;
+}
+
+#home .home-text {
+    transition-delay: 100ms;
 }
 
 .container {
@@ -151,7 +169,7 @@ ul li:hover {
 }
 
 .btn:hover {
-    box-shadow: 0 3px 0 0px var(--textColor);
+    box-shadow: 0 0px 4px 0px rgb(144, 144, 144);
 }
 
 .flex {
@@ -324,13 +342,19 @@ ul li:hover {
     border: 1px solid rgb(156, 156, 156);
     text-align: left;
     transition: var(--transition);
+    border-radius: 10px;
+    text-align: center;
 }
 
 #trial .rc {
     background-color: rgb(179, 192, 228);
-    margin-top: -32px;
+    margin-top: 2px;
     padding: 0.3rem;
     border: 1px solid rgb(156, 156, 156);
+    width: 100%;
+    margin-top: -35px;
+    border-radius: 10px;
+    text-align: center;
 }
 
 #trial .card:hover {
@@ -504,14 +528,17 @@ footer .logo img {
         width: 95%;
         margin: 0 auto;
     }
+    h2 {
+        font-size: 1.5rem;
+    }
     .navbar,
     .button {
         display: none;
     }
     .bars {
         display: block;
-        font-size: 1rem;
         padding: 0.2rem 0.6rem !important;
+        margin-bottom: 3px;
     }
     #home {
         overflow: hidden;
@@ -527,6 +554,8 @@ footer .logo img {
     }
     .header-container {
         height: 7vh;
+        align-items: flex-end;
+        padding-bottom: 0.5rem !important;
     }
     .home picture {
         display: none
@@ -538,7 +567,7 @@ footer .logo img {
         left: 0;
         background-color: var(--secondaryColor);
         width: 60%;
-        height: 100vh;
+        height: 50vh;
         padding: 1rem;
         transition: var(--transition);
         z-index: 999;
@@ -554,7 +583,7 @@ footer .logo img {
         z-index: -99;
     }
     .active ul {
-        margin-top: 4rem;
+        margin-top: 1rem;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -571,23 +600,25 @@ footer .logo img {
     .active .button {
         display: flex;
         flex-direction: column;
-        margin-top: 5rem;
+        margin-top: 3rem;
         padding-top: 1rem;
         border-top: 2px solid white;
     }
     .active .button .btn {
         margin-top: 1rem !important;
-        font-size: 1.1rem;
+        font-size: 1rem;
+        width: 80% !important;
         margin-left: 0 !important;
     }
     .active .button .btn-primary {
-        border: 2px solid black !important;
+        border: 2px solid var(--textColor) !important;
+        background-color: var(--textColor) !important;
     }
     #service {
         overflow: hidden;
     }
     .service .cards .card {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     .service .cards .card .image {
         display: flex;
@@ -615,7 +646,7 @@ footer .logo img {
         height: auto;
     }
     .trial-card .card {
-        margin-bottom: 2rem;
+        margin-bottom: 1rem;
     }
     #trial .rc {
         margin-top: 0.5rem;
