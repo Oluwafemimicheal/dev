@@ -394,8 +394,14 @@ ul li:hover {
     padding: 0.6rem 1rem;
 }
 
-#trial article .card .list small {
-    color: rgb(168, 168, 168) !important;
+#trial .card .text {
+    margin-top: 20px;
+    line-height: 3.5;
+    border-top: 1px solid gray;
+}
+
+#trial .card .text small {
+    color: rgb(94, 89, 89);
 }
 
 
