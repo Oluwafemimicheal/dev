@@ -108,7 +108,7 @@ h3 {
 }
 
 #home .home-text {
-    transition-delay: 100ms;
+    transition-delay: 50ms;
 }
 
 .container {
@@ -377,7 +377,7 @@ ul li:hover {
 }
 
 #trial .list {
-    width: 250px;
+    width: 100%;
     border-bottom: 1px solid gray;
     padding: 1.5rem 0;
 }
@@ -392,6 +392,10 @@ ul li:hover {
     color: white;
     border-radius: 2rem;
     padding: 0.6rem 1rem;
+}
+
+#trial article .card .list small {
+    color: rgb(168, 168, 168) !important;
 }
 
 
