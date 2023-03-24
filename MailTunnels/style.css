@@ -615,6 +615,7 @@ footer .logo {
         font-size: 1rem;
         width: 80% !important;
         margin-left: 0 !important;
+        background-color: var(--textColor);
     }
     .active .button .btn-primary {
         border: 2px solid var(--textColor) !important;
@@ -655,7 +656,7 @@ footer .logo {
         margin-bottom: 1rem;
     }
     #trial .rc {
-        margin-top: 0.5rem;
+        margin-top: -28px;
     }
     #user-experience .user-content {
         flex-direction: column !important;
