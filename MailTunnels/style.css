@@ -333,7 +333,7 @@ ul li:hover {
 }
 
 .trial-card {
-    margin-top: 4rem;
+    margin-top: 6rem;
     line-height: 1.3;
 }
 
@@ -372,18 +372,8 @@ ul li:hover {
     margin: 0.3rem 0 !important;
 }
 
-.pd-n {
-    padding: 1rem 0 !important;
-}
-
-#trial .list {
-    width: 100%;
-    border-bottom: 1px solid gray;
-    padding: 1.5rem 0;
-}
-
-#trial .list:nth-child(6) {
-    border-bottom: none;
+.pd-1 {
+    padding: 1rem !important;
 }
 
 .trial-btn {
@@ -395,7 +385,7 @@ ul li:hover {
 }
 
 #trial .card .text {
-    margin-top: 20px;
+    margin: 20px 0;
     line-height: 3.5;
     border-top: 1px solid gray;
 }
