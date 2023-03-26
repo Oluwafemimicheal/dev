@@ -5,43 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MailTunnels™ | form</title>
+    <title>Login/Register</title>
     <link rel="stylesheet" href="css/form.css">
+    <script src="form.js" defer></script>
 </head>
 
 <body>
-    <div class="container">
-        <div class="form-container">
-            <form action="/form-handle" method="post">
-                <div>
-                    <fieldset>
-                        <legend>User name</legend>
-                        <input type="text" id="username" name="username" title="username">
-                    </fieldset>
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Password</legend>
-                        <input type="text" id="password" name="password" title="password">
-                    </fieldset>
-                </div>
-                <div>
-                    <input type="checkbox" name="remind" id="remind" title="remind">
-                    <label for="remind">Remember me of my password</label>
-                </div>
-                <button type="submit">Send</button>
+    <div class="form-container">
+        <a href="index.html">
+            <img src="image/angle-left-svgrepo-com.svg" class="back" alt="">
+        </a>
+        <div class="form">
+            <form class="register">
+                <h3>Register</h3>
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" title="input" name="input" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" title="input" name="input" required>
+                </fieldset>
+                <fieldset class="pass">
+                    <legend>Password</legend>
+                    <input type="password" title="input" name="name" required class="show-password">
+                    <span class="icon">
+                        <img src="image/eye-svgrepo-com.svg" alt="">
+                    </span>
+                </fieldset>
+                <fieldset class="pass">
+                    <legend>Confirm Password</legend>
+                    <input type="password" title="input" name="input" required class="show-password" value="457586">
+                    <span class="icon">
+                        <img src="image/eye-svgrepo-com.svg" alt="">
+                    </span>
+                </fieldset>
+                <span>
+                    <input type="checkbox" title="checkbox">
+                    <small>Remember my Password!</small>
+                </span>
+                <button type="submit" class="btn"><span>Submit</span></button>
+                <button type="button" class="btn btn-primary"> <span>Demo</span> </button>
+                <small>Already a Member <a href="#" onclick="User()">Login</a></small>
+            </form>
+            <form class="user">
+                <h1>User Login</h1>
+                <fieldset>
+                    <legend>Username</legend>
+                    <input type="text" title="input" name="name" required>
+                </fieldset>
+                <fieldset class="pass">
+                    <legend>Password</legend>
+                    <input type="password" name="name" title='input' required class="show-password">
+                    <span class="icon">
+                        <img src="image/eye-svgrepo-com.svg" alt="">
+                    </span>
+                </fieldset>
+                <span>
+                    <input type="checkbox" title="checkbox">
+                    <small>Remember my Password!</small>
+                </span>
+                <button type="submit" class="btn" id="submit"><span>Submit</span></button>
+                <button type="button" class="btn btn-primary"> <span>Demo App</span> </button>
+                <small>Already a Member <a href="#"  onclick="Register()">Register</a></small>
             </form>
         </div>
     </div>
-    <footer>
-        <div class="container flex flex-col-1 pd-1">
-            <div class="footer-bottom">
-                <div class="fb-text flex">
-                    <small>MailTunnels™ | copyright &copy; 2021 - 2023</small>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <div class="message-popup">
+        <small id="message"></small>
+    </div>
+    </div>
 </body>
 
 </html>
