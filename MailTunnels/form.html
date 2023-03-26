@@ -7,15 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login/Register</title>
     <link rel="stylesheet" href="css/form.css">
-    <script src="form.js" defer></script>
+    <script src="js/form.js" defer></script>
 </head>
 
 <body>
     <div class="form-container">
+        <!-- Arrow back -->
         <a href="landing.html" title="back">
             <img src="image/angle-left-svgrepo-com.svg" class="back" alt="">
         </a>
         <div class="form">
+            <!-- Register form -->
             <form class="register" id="register">
                 <h3>Register</h3>
                 <fieldset>
@@ -48,6 +50,8 @@
                 <button type="button" class="btn btn-primary"> <span>Demo</span> </button>
                 <small>Already a Member <a href="#" onclick="User()">Login</a></small>
             </form>
+
+            <!-- User form -->
             <form class="user">
                 <h1>User Login</h1>
                 <fieldset>
@@ -71,9 +75,9 @@
             </form>
         </div>
     </div>
+    <!-- Popup message -->
     <div class="message-popup">
         <small id="message"></small>
-    </div>
     </div>
 </body>
 

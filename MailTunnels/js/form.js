@@ -18,22 +18,27 @@ const User = () => {
 }
 
 let valueOfInput = input.value
-if (valueOfInput.length < 8) {
-    message
-}
 
-icon.forEach((icon) => {
-    icon.addEventListener('click', (e) => {
-        password.forEach((password) => {
-            icon.src = 'image/eye-slash-svgrepo-com.svg'
-            password.type = 'text'
-            setTimeout(() => {
-                password.type = 'password'
-                icon.src = 'image/eye-svgrepo-com.svg'
-            }, 1500)
+console.log(valueOfInput)
+
+
+if (valueOfInput === '' || valueOfInput === null) {
+    message.classList.add('failed')
+} else {
+    icon.forEach((icon) => {
+        icon.addEventListener('click', (e) => {
+            password.forEach((password) => {
+                icon.src = '../image/eye-slash-svgrepo-com.svg'
+                password.type = 'text'
+                setTimeout(() => {
+                    password.type = 'password'
+                    icon.src = 'image/eye-svgrepo-com.svg'
+                }, 1500)
+            })
         })
     })
-})
+}
+
 
 form.forEach((form) => {
     form.addEventListener('submit', (e) => {

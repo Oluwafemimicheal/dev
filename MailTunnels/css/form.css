@@ -19,12 +19,6 @@ body {
     background-color: rgb(227, 233, 239);
 }
 
-.container {
-    width: 85%;
-    height: 100vh;
-    margin: auto;
-}
-
 button {
     background: transparent;
     border: none;
@@ -205,6 +199,10 @@ form span {
     justify-content: center;
     align-items: stretch;
     margin-bottom: 10px;
+}
+
+.pass {
+    position: relative;
 }
 
 form span small {
