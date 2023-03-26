@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailTunnels™ | form</title>
+    <link rel="stylesheet" href="css/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form action="/form-handle" method="post">
+                <div>
+                    <fieldset>
+                        <legend>User name</legend>
+                        <input type="text" id="username" name="username" title="username">
+                    </fieldset>
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Password</legend>
+                        <input type="text" id="password" name="password" title="password">
+                    </fieldset>
+                </div>
+                <div>
+                    <input type="checkbox" name="remind" id="remind" title="remind">
+                    <label for="remind">Remember me of my password</label>
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="container flex flex-col-1 pd-1">
+            <div class="footer-bottom">
+                <div class="fb-text flex">
+                    <small>MailTunnels™ | copyright &copy; 2021 - 2023</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
