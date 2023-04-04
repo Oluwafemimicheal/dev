@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -84,7 +85,7 @@ h3 {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 0.8s;
 }
 
 .show {
@@ -146,7 +147,7 @@ ul li:hover {
 
 .btn {
     width: max-content;
-    padding: 0.4rem 0.7rem;
+    padding: 0.7rem;
     margin: 0 0.5rem;
     border: 2px solid var(--textColor);
     border-radius: 0.5rem;
@@ -269,17 +270,17 @@ ul li:hover {
 }
 
 .service .cards .card:nth-child(1) {
-    background: url(image/pic1.webp) no-repeat;
+    background: url(../image/pic1.webp) no-repeat;
     background-size: 100%;
 }
 
 .service .cards .card:nth-child(2) {
-    background: url(image/pic2.webp) no-repeat;
+    background: url('../image/pic2.webp') no-repeat;
     background-size: 100%;
 }
 
 .service .cards .card:nth-child(3) {
-    background: url(image/pic3.webp) no-repeat;
+    background: url('../image/pic3.webp') no-repeat;
     background-size: 100%;
 }
 
@@ -554,9 +555,7 @@ footer .logo {
         padding: 2rem 0;
     }
     .header-container {
-        height: 7vh;
-        align-items: flex-end;
-        padding-bottom: 0.5rem !important;
+        padding-top: 5px;
     }
     .home picture {
         display: none

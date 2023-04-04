@@ -17,9 +17,10 @@ const User = () => {
     register.style.display = 'none'
 }
 
-let valueOfInput = input.value
+input.forEach((input) => {
+    console.log(input)
+})
 
-console.log(valueOfInput)
 
 
 if (valueOfInput === '' || valueOfInput === null) {
