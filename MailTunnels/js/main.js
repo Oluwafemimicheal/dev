@@ -5,17 +5,29 @@ const active = document.querySelector('.active')
 const li = document.querySelectorAll('ul li a')
 const body = document.querySelector('.navbar')
 const animate = document.querySelectorAll('.animate')
+
+
+
+
 menu.addEventListener('click', () => {
-    navbarToggle.classList.add('active')
+    if (navbarToggle.classList.toggle('active')) {
+        menu.innerText = 'close'
+    } else {
+        menu.innerText = 'menu'
+    }
 })
+
+
 li.forEach((btn) => {
     btn.addEventListener('click', () => {
         navbarToggle.classList.remove('active')
+        menu.innerText = 'menu'
     })
 })
 
 body.addEventListener('click', () => {
     navbarToggle.classList.remove('active')
+    menu.innerText = 'menu'
 })
 
 window.addEventListener('scroll', () => {
