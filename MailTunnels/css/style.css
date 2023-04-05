@@ -213,8 +213,7 @@ ul li:hover {
 }
 
 .header-container {
-    margin-top: 15px;
-    height: 10vh;
+    height: 13vh;
     overflow: hidden;
 }
 
@@ -535,14 +534,18 @@ footer .logo {
     h2 {
         font-size: 1.5rem;
     }
+    .header-container {
+        height: 8vh;
+        overflow: hidden;
+        transition: width var(--transition);
+    }
     .navbar,
     .button {
         display: none;
     }
     .bars {
         display: block;
-        padding: 0.2rem 0.6rem !important;
-        margin-bottom: 3px;
+        padding: 0.6rem !important;
     }
     #home {
         overflow: hidden;
@@ -565,35 +568,25 @@ footer .logo {
     .active {
         display: block;
         position: fixed;
-        top: 0;
+        top: 8%;
         left: 0;
-        background-color: var(--secondaryColor);
-        width: 60%;
-        height: 50vh;
+        background-color: white;
+        width: 100%;
+        height: 20vh;
         padding: 1rem;
         transition: var(--transition);
         z-index: 999;
-    }
-    .active::after {
-        position: absolute;
-        content: '';
-        width: 500px;
-        height: 100vh;
-        top: 0;
-        left: 0;
-        background-color: #e6b33225;
-        z-index: -99;
+        box-shadow: 0 4px 4px 0 gray;
     }
     .active ul {
         margin-top: 1rem;
-        flex-direction: column;
         align-items: flex-start;
     }
     .active ul li {
         margin: 10px;
     }
     .active a {
-        color: white;
+        color: var(--secondaryColor);
         font-size: 1.2rem;
     }
     .active a:hover {
@@ -601,8 +594,6 @@ footer .logo {
     }
     .active .button {
         display: flex;
-        flex-direction: column;
-        margin-top: 3rem;
         padding-top: 1rem;
         border-top: 2px solid white;
     }

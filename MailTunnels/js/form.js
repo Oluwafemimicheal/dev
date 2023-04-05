@@ -17,28 +17,18 @@ const User = () => {
     register.style.display = 'none'
 }
 
-input.forEach((input) => {
-    console.log(input)
-})
-
-
-
-if (valueOfInput === '' || valueOfInput === null) {
-    message.classList.add('failed')
-} else {
-    icon.forEach((icon) => {
-        icon.addEventListener('click', (e) => {
-            password.forEach((password) => {
-                icon.src = '../image/eye-slash-svgrepo-com.svg'
-                password.type = 'text'
-                setTimeout(() => {
-                    password.type = 'password'
-                    icon.src = 'image/eye-svgrepo-com.svg'
-                }, 1500)
-            })
+icon.forEach((icon) => {
+    icon.addEventListener('click', (e) => {
+        password.forEach((password) => {
+            icon.src = '../image/eye-slash-svgrepo-com.svg'
+            password.type = 'text'
+            setTimeout(() => {
+                password.type = 'password'
+                icon.src = 'image/eye-svgrepo-com.svg'
+            }, 1500)
         })
     })
-}
+})
 
 
 form.forEach((form) => {
@@ -49,12 +39,3 @@ form.forEach((form) => {
         })
     })
 })
-
-
-let name = "jinadu oluwafemi"
-
-if (name.length < 8) {
-    console.log('try again')
-} else {
-    console.log('it work')
-}
