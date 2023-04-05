@@ -208,10 +208,12 @@ ul li:hover {
     padding: 0 !important;
     background-color: white;
     box-shadow: 0 0 4px gray;
+    margin-top: 0 !important;
     z-index: 999;
 }
 
 .header-container {
+    margin-top: 15px;
     height: 10vh;
     overflow: hidden;
 }
