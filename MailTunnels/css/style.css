@@ -674,7 +674,7 @@ footer .logo {
     #keep-consumer .kp {
         flex-direction: column-reverse !important;
     }
-    .picture {
+    #keep-consumer .kp .picture {
         width: 500px;
         height: 500px;
         background-color: grey;
