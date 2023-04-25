@@ -236,7 +236,7 @@ ul li:hover {
 }
 
 .home picture {
-    width: 50%;
+    width: 45%;
     height: 500px;
     overflow: hidden;
     justify-content: center !important;
@@ -271,17 +271,17 @@ ul li:hover {
 }
 
 .service .cards .card:nth-child(1) {
-    background: url(../image/pic1.webp) no-repeat;
+    background: url('../image/pic1.jpg') no-repeat;
     background-size: 100%;
 }
 
 .service .cards .card:nth-child(2) {
-    background: url('../image/pic2.webp') no-repeat;
+    background: url('../image/pic4.jpg') no-repeat;
     background-size: 100%;
 }
 
 .service .cards .card:nth-child(3) {
-    background: url('../image/pic3.webp') no-repeat;
+    background: url('../image/pic3.png') no-repeat;
     background-size: 100%;
 }
 
@@ -420,6 +420,14 @@ ul li:hover {
     font-weight: lighter !important;
     line-height: 1.5;
     font-size: 1rem !important;
+}
+
+#user-experience picture {
+    justify-content: flex-end !important;
+}
+
+#user-experience picture img {
+    width: 80%;
 }
 
 
