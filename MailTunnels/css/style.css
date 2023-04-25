@@ -427,7 +427,7 @@ ul li:hover {
 }
 
 #user-experience picture img {
-    width: 80%;
+    width: 70%;
 }
 
 
@@ -460,7 +460,6 @@ ul li:hover {
 #user-testimony picture {
     width: 550px;
     height: 350px;
-    background-color: rgb(237, 237, 237);
     justify-content: center !important;
     padding: 0.8rem 0.5rem;
 }
