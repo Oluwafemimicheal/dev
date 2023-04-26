@@ -418,6 +418,7 @@ ul li:hover {
 }
 
 #user-experience picture {
+    width: 90%;
     justify-content: flex-end !important;
 }
 
@@ -438,7 +439,7 @@ ul li:hover {
 #keep-consumer .ovalay {
     background: url('../image/optimize\ picture.png') no-repeat;
     background-size: 50%;
-    background-position: right;
+    background-position: left;
 }
 
 #keep-consumer .ovalay .text-ovalay {
@@ -447,6 +448,7 @@ ul li:hover {
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    flex-direction: row-reverse;
 }
 
 #keep-consumer .text {
