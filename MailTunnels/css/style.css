@@ -430,6 +430,7 @@ ul li:hover {
 /* keep-consumer */
 
 #keep-consumer {
+    position: relative;
     width: 100%;
     height: 360px;
     background-color: #9de0de;
@@ -673,8 +674,16 @@ footer .logo {
     #trial .rc {
         margin-top: -28px;
     }
+    #user-experience picture {
+        justify-content: center !important;
+    }
     #user-experience .user-content {
+        text-align: center;
         flex-direction: column !important;
+    }
+    #user-experience .user-content .content-text p {
+        width: 100%;
+        margin: 1.5rem auto;
     }
     #user-experience .user-content .content-text {
         width: 100%;
@@ -686,29 +695,41 @@ footer .logo {
         margin: 0 !important;
         margin-bottom: 3rem !important;
     }
-    #keep-consumer {
-        overflow: hidden;
-    }
-    #keep-consumer .content-text {
-        width: 50%;
-        margin: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    #user-testimony .content-text {
+    #keep-consumer .ovalay .text-ovalay .text {
         width: 100%;
-        margin: 0 !important;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        text-align: center !important;
-        margin-bottom: 3rem !important;
+        margin: auto;
+        position: absolute;
+        text-align: center;
+        padding: 60px 20px !important;
+    }
+    #keep-consumer .ovalay {
+        background: url('../image/optimize\ picture.png') no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    #keep-consumer .ovalay .text-ovalay {
+        background-color: #9de0deb5;
+    }
+    #keep-consumer .text h2 {
+        color: rgb(0, 0, 0);
+        font-weight: 700;
+    }
+    #keep-consumer .text p {
+        line-height: 1.7;
+        font-size: 1.1rem;
+        color: rgb(0, 0, 0);
     }
     #user-testimony .user-content {
+        text-align: center;
         flex-direction: column;
+    }
+    #user-testimony .user-content .content-text h2 {
+        font-weight: 700;
+    }
+    #user-testimony .user-content .content-text p {
+        width: 100%;
+        margin: 1.5rem auto;
+        font-size: 1.1rem;
     }
     #integration {
         margin-top: 1rem !important;
