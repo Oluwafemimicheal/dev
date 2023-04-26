@@ -230,13 +230,13 @@ ul li:hover {
 /* home style */
 
 .home {
-    margin: 3rem auto;
+    margin: 2rem auto;
     align-items: center !important;
     line-height: 1.5;
 }
 
 .home picture {
-    width: 45%;
+    width: 40%;
     height: 500px;
     overflow: hidden;
     justify-content: center !important;
@@ -330,12 +330,12 @@ ul li:hover {
 
 #trial {
     background-color: rgb(255, 246, 246);
-    padding-top: 3rem;
+    padding-top: 5rem;
     text-align: center;
 }
 
 .trial-card {
-    margin-top: 4rem;
+    margin-top: 2rem;
     line-height: 1.3;
     gap: 0.5rem;
 }
@@ -410,16 +410,11 @@ ul li:hover {
     background-color: white;
 }
 
-.content-text {
-    width: 70%;
-    margin-right: 3rem;
-}
-
 .content-text p {
     width: 80%;
     font-weight: lighter !important;
-    line-height: 1.5;
-    font-size: 1rem !important;
+    line-height: 1.8;
+    font-size: 1.2rem !important;
 }
 
 #user-experience picture {
@@ -434,20 +429,41 @@ ul li:hover {
 /* keep-consumer */
 
 #keep-consumer {
-    background-color: rgb(255, 239, 239);
-    padding: 4rem 0;
+    width: 100%;
+    height: 360px;
+    background-color: #9de0de;
+    overflow: hidden;
 }
 
-#keep-consumer .kp {
-    margin: 3rem auto;
+#keep-consumer .ovalay {
+    background: url('../image/optimize\ picture.png') no-repeat;
+    background-size: 50%;
+    background-position: right;
 }
 
-#keep-consumer picture {
-    transform: scale(1.2);
+#keep-consumer .ovalay .text-ovalay {
+    width: 100%;
+    height: 360px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-#keep-consumer .content-text {
-    margin-left: 20px;
+#keep-consumer .text {
+    width: 50%;
+    margin: auto 0;
+    padding-left: 4rem;
+}
+
+#keep-consumer .text h2 {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+#keep-consumer .text p {
+    line-height: 1.7;
+    font-size: 1.4rem;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -671,23 +687,13 @@ footer .logo {
     #keep-consumer {
         overflow: hidden;
     }
-    #keep-consumer .kp {
-        flex-direction: column-reverse !important;
-    }
-    #keep-consumer .kp .picture {
-        width: 500px;
-        height: 500px;
-        background-color: grey;
-    }
     #keep-consumer .content-text {
-        width: 100%;
-        margin: 0 !important;
+        width: 50%;
+        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        text-align: center !important;
-        margin-bottom: 3rem !important;
     }
     #user-testimony .content-text {
         width: 100%;
