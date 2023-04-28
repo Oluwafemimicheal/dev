@@ -629,7 +629,7 @@ footer .logo {
         font-size: 1rem;
         width: 80% !important;
         background-color: white;
-        color: var(--textColor) text-align: center;
+        color: var(--textColor);
         text-align: center;
     }
     .active .button .btn-primary {
