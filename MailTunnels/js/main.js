@@ -34,14 +34,18 @@ window.addEventListener('scroll', () => {
     document.querySelector('.header').classList.toggle('scroll', window.scrollY > 80)
 })
 
-const observe = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show')
-        } else {
-            entry.target.classList.remove('show')
-        }
-    })
-})
+// body.addEventListener('DOMContentLoaded', observe)
 
-animate.forEach((el) => observe.observe(el))
+// function observe() {
+//     const observe = new IntersectionObserver((entries) => {
+//         entries.forEach((entry) => {
+//             if (entry.isIntersecting) {
+//                 entry.target.classList.add('show')
+//             } else {
+//                 entry.target.classList.remove('show')
+//             }
+//         })
+//     })
+
+//     animate.forEach((el) => observe.observe(el))
+// }

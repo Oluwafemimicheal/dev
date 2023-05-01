@@ -83,9 +83,9 @@ h3 {
 
 .animate {
     opacity: 0;
-    filter: blur(5px);
+    filter: blur(3px);
     transform: translateX(-100%);
-    transition: all 0.8s;
+    transition: all 0.3s;
 }
 
 .show {
@@ -94,12 +94,10 @@ h3 {
     transform: translateX(0);
 }
 
-#service .card:nth-child(2),
 #trial .card:nth-child(2) {
     transition-delay: 100ms;
 }
 
-#service .card:nth-child(3),
 #trial .card:nth-child(3) {
     transition-delay: 200ms;
 }
