@@ -34,18 +34,18 @@ window.addEventListener('scroll', () => {
     document.querySelector('.header').classList.toggle('scroll', window.scrollY > 80)
 })
 
-// body.addEventListener('DOMContentLoaded', observe)
 
-// function observe() {
-//     const observe = new IntersectionObserver((entries) => {
-//         entries.forEach((entry) => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add('show')
-//             } else {
-//                 entry.target.classList.remove('show')
-//             }
-//         })
-//     })
+function observe() {
+    const observe = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show')
+            } else {
+                entry.target.classList.remove('show')
+            }
+        })
+    })
 
-//     animate.forEach((el) => observe.observe(el))
-// }
+    animate.forEach((el) => observe.observe(el))
+}
+observe()
