@@ -324,6 +324,72 @@ ul li:hover {
 }
 
 
+/* service-card sectionn */
+
+.card-container {
+    display: flex;
+}
+
+.card-container .card {
+    width: 100%;
+    position: relative;
+    text-align: center;
+}
+
+.card-container .card:hover .card-up-text h3 {
+    text-decoration: underline;
+}
+
+.card-container .card:nth-child(1) {
+    background-color: rgba(106, 130, 106, 0.702);
+}
+
+.card-container .card:nth-child(2) {
+    background-color: rgb(167, 208, 167);
+}
+
+.card-container .card:nth-child(3) {
+    background-color: rgb(177, 225, 177);
+}
+
+.card-container .card .card-up-text {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    background-color: rgba(255, 255, 255, 0.659);
+    padding: 10px;
+}
+
+.card-container .card .card-up-text h3 {
+    color: black !important;
+}
+
+.card-container .card .image-box {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.card-container .card .image-box img {
+    width: 100%;
+}
+
+.card-container .card .card-text {
+    padding: 1rem;
+    text-align: center;
+}
+
+.card-container .card .card-text p {
+    color: black !important;
+}
+
+
+/* end service-card sectionn */
+
+
 /* Trial style */
 
 #trial {
