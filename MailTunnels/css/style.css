@@ -694,7 +694,7 @@ footer .logo {
     }
     .active a {
         color: var(--secondaryColor);
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
     .active a:hover {
         color: var(--primaryColor);
