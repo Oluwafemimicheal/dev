@@ -31,7 +31,7 @@ body.addEventListener('click', () => {
 })
 
 window.addEventListener('scroll', () => {
-    document.querySelector('.header').classList.toggle('scroll', window.scrollY > 80)
+    header.classList.toggle('scroll', window.scrollY > 80)
 })
 
 
