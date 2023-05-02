@@ -145,7 +145,7 @@ ul li:hover {
 
 .btn {
     width: max-content;
-    padding: 0.7rem;
+    padding: 0.6rem;
     margin: 0 0.5rem;
     border: 2px solid var(--textColor);
     border-radius: 0.5rem;
@@ -598,6 +598,13 @@ footer .logo {
 
 .fb-text small {
     color: white;
+}
+
+.back-to-up {
+    width: 50pz;
+    padding: 5px;
+    background-color: #455a64;
+    border-radius: 5px;
 }
 
 @media (max-width: 1064px) {
