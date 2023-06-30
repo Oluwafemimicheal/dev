@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    border: none;
+    outline: none;
+}
+
+:root {
+    --primaryColor: rgb(173, 72, 72);
+    --textColor: rgb(146, 128, 128);
+    --darkGray: rgb(88, 88, 88);
+    --grayLight: rgb(202, 202, 202);
+}
+
+
+/* general style */
+
+.container {
+    width: 100%;
+    max-width: 1120px;
+    margin: auto;
+}
+
+section {
+    padding: 50px 0;
+}
+
+.btn {
+    width: max-content;
+    padding: 10px 20px;
+    background-color: rgb(173, 72, 72);
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--grayLight);
+    color: var(--darkGray);
+}
+
+.btn:active {
+    transform: scale(0.8);
+}
+
+img {
+    width: 100%;
+}
+
+
+/* Header style */
+
+header {
+    position: sticky;
+    top: 0%;
+    left: 0%;
+    padding: 30px 0;
+    text-align: left;
+    background-color: var(--primaryColor);
+    color: white;
+}
+
+header h2 span {
+    color: black;
+}
+
+.item-view {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.images-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.images-container .main-image {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.images-container .main-image img {
+    width: 150%;
+}
+
+.images-container .similar-item {
+    display: flex;
+    gap: 10px;
+}
+
+.images-container .similar-item .imagebx {
+    width: 130px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.images-container .similar-item .imagebx img {
+    width: 150%;
+}
+
+.images-container .similar-item .imagebx:hover {
+    border: 2px solid var(--primaryColor);
+}
+
+.images-container .similar-item .imagebx.active {
+    border: 2px solid var(--primaryColor);
+}

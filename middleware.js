@@ -1,8 +1,7 @@
 const logger = (req, res, next) => {
     const method = req.method
-    const url = req.url
     const data = new Date().getFullYear()
-    console.log(method, url, data)
+    console.log(method, data)
     next()
 }
 const authorize = (req, res, next) => {
