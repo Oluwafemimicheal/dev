@@ -26,7 +26,7 @@
 }
 
 section {
-    padding: 50px 0;
+    padding: 100px 0;
 }
 
 .btn {
@@ -64,17 +64,33 @@ header {
     text-align: left;
     background-color: var(--primaryColor);
     color: white;
+    z-index: 999;
+}
+
+header h2 {
+    font-size: 1.6rem;
 }
 
 header h2 span {
     color: black;
 }
 
+
+/* PRoducts view style */
+
 .item-view {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+}
+
+.back {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    cursor: pointer;
 }
 
 .images-container {
@@ -124,4 +140,93 @@ header h2 span {
 
 .images-container .similar-item .imagebx.active {
     border: 2px solid var(--primaryColor);
+}
+
+
+/* Item content style */
+
+.item-content {
+    padding-left: 40px;
+}
+
+.item-content div {
+    margin: 5px 0;
+}
+
+.item-content .rate,
+.item-content .color,
+.item-content .stock-number,
+.item-content .stock-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-content .rate .icon i {
+    color: var(--primaryColor);
+}
+
+.item-content p {
+    color: var(--textColor);
+    line-height: 2;
+}
+
+.item-content .stock-detail {
+    width: max-content;
+    gap: 40px;
+    border-bottom: 2px solid var(--grayLight);
+}
+
+.item-content .stock-detail div h4 {
+    margin-bottom: 20px;
+}
+
+.item-content .stock-detail div p {
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.item-content .stock-detail h3 span {
+    font-weight: 100;
+    font-size: 16px;
+    padding-left: 30px;
+    color: var(--textColor);
+}
+
+.item-content .color {
+    margin: 20px 0;
+}
+
+.item-content .color i {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-radius: 50%;
+    background-color: purple;
+}
+
+.item-content .stock-number {
+    margin: 25px 0;
+}
+
+@media(max-width: 700px) {
+    .container {
+        width: 95%;
+        max-width: 600px;
+    }
+    header h2 {
+        font-size: 0.8rem;
+    }
+    section {
+        padding: 10px 0;
+    }
+    .item-view {
+        flex-direction: column;
+    }
+    .item-content {
+        padding: 0;
+    }
 }
