@@ -20,14 +20,13 @@
 /* general style */
 
 .container {
-    width: 80%;
+    width: 100%;
     max-width: 1120px;
     margin: auto;
 }
 
 section {
     padding: 50px 0;
-    overflow: hidden;
 }
 
 .btn {
@@ -48,6 +47,10 @@ section {
 
 .btn:active {
     transform: scale(0.8);
+}
+
+img {
+    width: 100%;
 }
 
 
@@ -71,11 +74,13 @@ header h2 span {
 /* Product section style */
 
 .view-container {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
-    overflow: hidden;
+    height: 100vh;
+    z-index: -999;
 }
 
 aside {
@@ -192,14 +197,45 @@ aside .shipping {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 100%;
     height: 5vh;
     border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.product-view .header .icon {
+    display: flex;
+    gap: 5px;
+}
+
+.product-view .header .icon i {
+    border: 2px solid transparent;
+    width: 35px;
+    height: 34px;
     background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
 }
 
 .product-view .header .icon>.fa-solid {
-    font-size: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.product-view .header .icon>.fa-solid:hover,
+.product-view .header .icon i:hover {
+    color: var(--primaryColor);
+    background-color: transparent;
+    border-color: var(--primaryColor);
+}
+
+.product-view .header .icon i:active {
+    transform: scale(0.8);
 }
 
 .product-view .header .mid-text {
@@ -210,7 +246,49 @@ aside .shipping {
 }
 
 .product-view .header .mid-text span {
-    width: 400px;
+    width: 350px;
     height: 2px;
     background-color: var(--grayLight)
+}
+
+.product-view .header .mid-text p {
+    font-size: 15px;
+    color: var(--textColor);
+}
+
+.product-view .header .mid-text .p {
+    color: var(--darkGray);
+    font-weight: 600;
+}
+
+.product-view .header .mid-text i {
+    color: var(--darkGray);
+}
+
+.product-view .products-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.product-view .products-container .card {
+    width: 290px;
+    height: auto;
+}
+
+.product-view .products-container .card .imagebx {
+    width: 290px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.product-view .products-container .card .card-text {
+    display: flex;
+    justify-content: space-between;
 }
