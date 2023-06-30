@@ -74,13 +74,11 @@ header h2 span {
 /* Product section style */
 
 .view-container {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     gap: 50px;
     height: 100vh;
-    z-index: -999;
 }
 
 aside {
@@ -254,11 +252,6 @@ aside .shipping {
 .product-view .header .mid-text p {
     font-size: 15px;
     color: var(--textColor);
-}
-
-.product-view .header .mid-text .p {
-    color: var(--darkGray);
-    font-weight: 600;
 }
 
 .product-view .header .mid-text i {
