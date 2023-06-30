@@ -80,7 +80,7 @@ aside>div h4 {
 aside .search input {
     width: 100%;
     background-color: rgb(167, 167, 167);
-    padding: 10px 5px;
+    padding: 8px 5px;
     font-size: 14px;
     border-radius: 5px;
 }
@@ -107,4 +107,35 @@ aside .category ul li:hover {
 aside .category ul li.active {
     color: rgb(173, 72, 72);
     border-bottom: 2px solid rgb(146, 128, 128);
+}
+
+aside .company select {
+    padding: 5px;
+    background-color: rgb(194, 194, 194);
+    border-radius: 5px;
+}
+
+aside .color .colors {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+aside .color .colors span {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+aside .color .colors span:nth-child(2) {
+    background-color: red;
+}
+
+aside .color .colors span:nth-child(3) {
+    background-color: purple;
+}
+
+aside .color .colors span:nth-child(4) {
+    background-color: blue;
 }
