@@ -9,6 +9,13 @@
     outline: none;
 }
 
+:root {
+    --primaryColor: rgb(173, 72, 72);
+    --textColor: rgb(146, 128, 128);
+    --darkGray: rgb(88, 88, 88);
+    --grayLight: rgb(202, 202, 202);
+}
+
 
 /* general style */
 
@@ -35,7 +42,8 @@ section {
 }
 
 .btn:hover {
-    background-color: rgb(168, 167, 167);
+    background-color: var(--grayLight);
+    color: var(--darkGray);
 }
 
 .btn:active {
@@ -51,9 +59,8 @@ header {
     left: 0%;
     padding: 30px 0;
     text-align: left;
-    background-color: rgb(172, 132, 132);
-    color: rgb(173, 72, 72);
-    box-shadow: 0 0 4px 0 rgb(141, 141, 141);
+    background-color: var(--primaryColor);
+    color: white;
 }
 
 header h2 span {
@@ -62,6 +69,15 @@ header h2 span {
 
 
 /* Product section style */
+
+.view-container {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 50px;
+    overflow: hidden;
+}
 
 aside {
     width: 20%;
@@ -79,7 +95,7 @@ aside>div h4 {
 
 aside .search input {
     width: 100%;
-    background-color: rgb(167, 167, 167);
+    background-color: var(--grayLight);
     padding: 8px 5px;
     font-size: 14px;
     border-radius: 5px;
@@ -93,7 +109,7 @@ aside .category ul li {
     width: max-content;
     font-size: 15px;
     margin-bottom: 10px;
-    color: rgb(146, 128, 128);
+    color: var(--textColor);
     cursor: pointer;
     border-bottom: 2px solid transparent;
     transition: .1s ease-in-out;
@@ -111,7 +127,7 @@ aside .category ul li.active {
 
 aside .company select {
     padding: 5px;
-    background-color: rgb(194, 194, 194);
+    background-color: var(--grayLight);
     border-radius: 5px;
 }
 
@@ -125,7 +141,18 @@ aside .color .colors span {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    overflow: hidden;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .3s ease-in-out;
+}
+
+aside .color .colors span:hover {
+    opacity: 1;
+}
+
+aside .color .colors p {
+    border-bottom: 2px solid var(--primaryColor);
+    cursor: pointer;
 }
 
 aside .color .colors span:nth-child(2) {
@@ -138,4 +165,38 @@ aside .color .colors span:nth-child(3) {
 
 aside .color .colors span:nth-child(4) {
     background-color: blue;
+}
+
+aside .color .colors span:nth-child(5) {
+    background-color: brown;
+}
+
+aside .color .colors span:last-child {
+    background-color: yellow;
+}
+
+aside .price p {
+    color: var(--textColor);
+    margin-bottom: 5px;
+}
+
+aside .shipping {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+/* Product-view */
+
+.product-view .header {
+    padding: 10px 0;
+    width: 800px;
+    height: 5vh;
+    border-radius: 5px;
+    background-color: var(--primaryColor);
+}
+
+.product-view .header .icon i .fa-solid {
+    font-size: 400px;
 }
