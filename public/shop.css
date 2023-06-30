@@ -71,7 +71,6 @@ header h2 span {
 /* Product section style */
 
 .view-container {
-    background-color: blanchedalmond;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -190,13 +189,28 @@ aside .shipping {
 /* Product-view */
 
 .product-view .header {
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 800px;
     height: 5vh;
     border-radius: 5px;
     background-color: var(--primaryColor);
 }
 
-.product-view .header .icon i .fa-solid {
-    font-size: 400px;
+.product-view .header .icon>.fa-solid {
+    font-size: 30px;
+}
+
+.product-view .header .mid-text {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.product-view .header .mid-text span {
+    width: 400px;
+    height: 2px;
+    background-color: var(--grayLight)
 }
