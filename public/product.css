@@ -67,11 +67,18 @@ header {
     z-index: 999;
 }
 
-header h2 {
-    font-size: 1.6rem;
+header .link {
+    display: flex;
+    gap: 10px;
 }
 
-header h2 span {
+header h2 a {
+    font-size: 1.6rem;
+    color: white;
+}
+
+header span {
+    font-size: 1.6rem;
     color: black;
 }
 

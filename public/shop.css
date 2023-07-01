@@ -66,7 +66,18 @@ header {
     color: white;
 }
 
-header h2 span {
+header .link {
+    display: flex;
+    gap: 10px;
+}
+
+header h2 a {
+    font-size: 1.6rem;
+    color: white;
+}
+
+header span {
+    font-size: 1.6rem;
     color: black;
 }
 
