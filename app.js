@@ -1,7 +1,6 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const { logger, authorize } = require('./middleware')
 
 // req=> Middleware =>res
 
@@ -18,10 +17,9 @@ app.get('/form', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-    const { name } = req.body;
-    console.log(name)
-    if (name) {
-        return res.status(200).send(`Welcome ${name}`)
+    const { username, email, service, message } = req.body;
+    if (username) {
+        return res.status(200).send(`Welcome ${username} <br> <p>${email}</p><p>${service}</p><p>${message}</p>`)
     }
     res.status(401).send('Please provide Credentials')
 })
