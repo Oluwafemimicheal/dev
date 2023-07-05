@@ -7,9 +7,9 @@ const app = express()
 //app.use(logger) // can also apply a path which make all that path route to access the logger functionality example: /api/product
 
 app.get('/', (req, res) => {
-        res.send('<h1>Middleware Page</h1><a href="/logger">Check Middleware</a>')
-    })
-    // app.use(express.static('./form'))
+    res.send('<h1>Middleware Page</h1><a href="/logger">Check Middleware</a>')
+})
+app.use(express.static('./form'))
 app.use(express.urlencoded({ extended: false }))
 
 app.get('/form', (req, res) => {
@@ -17,9 +17,9 @@ app.get('/form', (req, res) => {
 })
 
 app.post('/login', (req, res) => {
-    const { username, email, service, message } = req.body;
-    if (username) {
-        return res.status(200).send(`Welcome ${username} <br> <p>${email}</p><p>${service}</p><p>${message}</p>`)
+    const { name, email, service, message } = req.body;
+    if (name) {
+        return res.status(200).send(`Welcome ${name} <br> <p>${email}</p><p>${service}</p><p>${message}</p>`)
     }
     res.status(401).send('Please provide Credentials')
 })

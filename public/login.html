@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container link">
+            <h2>
+                <a href="index.html">Home</a>
+            </h2>
+            <span>/ Login</span>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="container flex">
+                <form action="/login" method="POST" class="flex">
+                    <input type="text" name="name" placeholder="username" autocomplete="false" required>
+                    <input type="password" name="email" placeholder="password" autocomplete="false" required>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
