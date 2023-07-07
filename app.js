@@ -1,34 +1,40 @@
 const express = require('express')
-const path = require('path')
+const data = require('./data')
+
 const app = express()
 
-// req=> Middleware =>res
-
-//app.use(logger) // can also apply a path which make all that path route to access the logger functionality example: /api/product
-
-app.get('/', (req, res) => {
-    res.send('<h1>Middleware Page</h1><a href="/logger">Check Middleware</a>')
-})
-app.use(express.static('./form'))
-app.use(express.urlencoded({ extended: false }))
-
-app.get('/form', (req, res) => {
-    res.sendFile(path.resolve('./form/contact.html'))
+app.get('/api/product', (req, res) => {
+    const newProduct = data.map((product) => {
+        const { id, job, name } = product
+        return { id, name, job }
+    })
+    res.json(newProduct)
 })
 
-app.post('/login', (req, res) => {
-    const { name, email, service, message } = req.body;
-    if (name) {
-        return res.status(200).send(`Welcome ${name} <br> <p>${email}</p><p>${service}</p><p>${message}</p>`)
+app.get('/api/product/:id', (req, res) => {
+    const { id } = req.params
+    const singleProduct = data.find((product) => product.id === Number(id))
+    if (!singleProduct) {
+        return res.json({ success: false, data: 'Not found' })
     }
-    res.status(401).send('Please provide Credentials')
+    res.json(singleProduct)
 })
 
-app.get('*', (req, res) => res.status(404).send('<h1>Page not found</h1><a href="/">Item</a>'))
+
+app.get('/api/product/v1/query', (req, res) => {
+    const { search, limit } = req.query
+
+    if (search) {
+
+    }
+})
 
 
+app.all('*', (req, res) => {
+    res.status(404).send('Serve cannot locate your request')
+})
 
 
 app.listen(5000, () => {
-    console.log('Middleware is running on 5000...')
+    console.log('Serve running on port 5000...')
 })
