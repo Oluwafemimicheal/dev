@@ -23,10 +23,24 @@ app.get('/api/product/:id', (req, res) => {
 
 app.get('/api/product/v1/query', (req, res) => {
     const { search, limit } = req.query
+    let sortProducts = [...data]
 
     if (search) {
-
+        sortProducts = sortProducts.filter((product) => {
+            product.name.startsWith(search)
+        })
+        return res.json(sortProducts)
     }
+
+    if (limit) {
+        sortProducts = sortProducts.slice(0, Number(limit))
+    }
+
+    if (sortProducts < 1) {
+        res.status(200).json({ success: true, data: [] })
+    }
+
+    res.json(sortProducts)
 })
 
 
